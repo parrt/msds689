@@ -3,7 +3,7 @@ MSDS689 Problem Solving with Python
 
 (*Proposed to be MSDS695 Data Structures and Algorithms year 2020*)
 
-This course give students a deeper and more general view of data structures and algorithms. While students have examined a number of data structures, such as binary trees, already, this course provides a much more in-depth study. This depth will benefit them greatly in the advanced machine learning course that follows in the next module. This course also tends to address many of the difficult algorithm questions students get during job interviews. The critical data structures covered in this class are: lists, linked lists, trees, graphs, hash tables, and tries. The course also covers a variety of common and useful recursive and non-recursive algorithms, such as searching and sorting.
+This course give students a deeper and more general view of data structures and algorithms. While students have examined a number of data structures, such as binary trees, already, this course provides a much more in-depth study. This depth will benefit them greatly in the advanced machine learning course. This course also tends to address many of the difficult algorithm questions students get during job interviews. The critical data structures covered in this class are: lists, linked lists, trees, graphs, hash tables, and tries. The course also covers a variety of common and useful recursive and non-recursive algorithms, such as searching and sorting.
 
 This course is part of the [MS in Data Science program at the University of San Francisco](https://www.usfca.edu/arts-sciences/graduate-programs/data-science).
 
@@ -71,9 +71,10 @@ For information and resources regarding sexual misconduct or assault visit the <
 
 | Artifact | Grade Weight | Due date |
 |--------|--------|--------|
-|[]()| x% | Fri, Aug 31 11:59pm |
+|[OO hashtable]()| 10% | Sun, Feb xx 11:59pm |
+|[Isolation Forest]()| 50% | Sun, Mar xx 11:59pm |
 |Exam 1| 15%| 9:15AM-9:55AM Fri Feb 15 |
-|Exam 2| 22%| 10AM-11:00AM Fri Mar 8 |
+|Exam 2| 25%| 10AM-11:00AM Fri Mar 8 |
 
 All projects will be graded with the specific input or tests given in the project description, so you understand precisely what is expected of your program. Consequently, projects will be graded in binary fashion: They either work or they do not. The only exception is when your program does not run on the grader's or my machine because of some cross-platform issue. This is typically because a student has hardcoded some file name or directory into their program. In that case, we will take off just 20% instead of giving you a 0. Please go to github and verify that the website has the proper files for your solution. That is what I will download for testing.
 
