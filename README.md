@@ -3,10 +3,20 @@ MSDS689 Problem Solving with Python
 
 (*Proposed to be MSDS695 Data Structures and Algorithms year 2020*)
 
-Org and operating on data
+This course give students a deeper and more general view of data structures and algorithms. While students have examined a number of data structures, such as binary trees, already, this course provides a much more in-depth study. This depth will benefit them greatly in the advanced machine learning course that follows in the next module. This course also tends to address many of the difficult algorithm questions students get during job interviews. The critical data structures covered in this class are: lists, linked lists, trees, graphs, hash tables, and tries. The course also covers a variety of common and useful recursive and non-recursive algorithms, such as searching and sorting.
 
 This course is part of the [MS in Data Science program at the University of San Francisco](https://www.usfca.edu/arts-sciences/graduate-programs/data-science).
 
+# Course Learning Objectives (CLOs)
+
+By the end of this course, students will be able to:
+
+1. Describe object-oriented programming and use objects to construct linked lists, trees, and graph data structures
+2. Implement critical algorithms, such as searching and list manipulations
+3. Build hash tables
+4. Create Trie data structures
+5. Design recursive algorithms
+6. Compare algorithmic complexity using “big-O” notation
 
 # Administrivia
 
@@ -73,4 +83,12 @@ Each project has a hard deadline and only those projects working correctly befor
 
 # Syllabus
 
-## Organizing data in memory into structures
+* Introduction to algorithm complexity (“Big-O” notation)
+* Review hash table construction
+* Searching, sorting, distance metrics (e.g., Levenshtein distance) for arrays and strings
+* Linked lists and common operations, such as insertion and deletion
+* Binary and n-ary trees
+* Tries for efficient word look up
+* Graphs via adjacency lists and adjacency matrices; shortest path algorithm
+
+The use of recursive algorithms will be emphasized frequently and wherever appropriate to reinforce this critical mechanism. Discussion of formal algorithm complexity will also be emphasized throughout the lectures.
