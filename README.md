@@ -71,7 +71,7 @@ For information and resources regarding sexual misconduct or assault visit the <
 
 | Artifact | Grade Weight | Due date |
 |--------|--------|--------|
-|[OO hashtable]()| 10% | Sun, Feb xx 11:59pm |
+|[OO hashtable](projects/oohtable/oohtable.md)| 10% | Sun, Feb xx 11:59pm |
 |[Isolation Forest]()| 50% | Sun, Mar xx 11:59pm |
 |Exam 1| 15%| 9:15AM-9:55AM Fri Feb 15 |
 |Exam 2| 25%| 10AM-11:00AM Fri Mar 8 |
