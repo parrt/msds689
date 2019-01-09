@@ -1,3 +1,6 @@
 # Isolation Forest Implementation
 
-do in parallel
+do in parallel 5%
+
+select features rather than random feature 5%
+
