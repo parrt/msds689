@@ -72,9 +72,9 @@ For information and resources regarding sexual misconduct or assault visit the <
 | Artifact | Grade Weight | Due date |
 |--------|--------|--------|
 |[OO hashtable](projects/oohtable/oohtable.md)| 10% | Sun, Feb xx 11:59pm |
-|[Isolation Forest]()| 50% | Sun, Mar xx 11:59pm |
-|Exam 1| 15%| 9:15AM-9:55AM Fri Feb 15 |
-|Exam 2| 25%| 10AM-11:00AM Fri Mar 8 |
+|[Isolation Forest]()| 40% | Sun, Mar xx 11:59pm |
+|Exam 1| 20%| 9:15AM-9:55AM Fri Feb 15 |
+|Exam 2| 30%| 10AM-11:00AM Fri Mar 8 |
 
 All projects will be graded with the specific input or tests given in the project description, so you understand precisely what is expected of your program. Consequently, projects will be graded in binary fashion: They either work or they do not. The only exception is when your program does not run on the grader's or my machine because of some cross-platform issue. This is typically because a student has hardcoded some file name or directory into their program. In that case, we will take off just 20% instead of giving you a 0. Please go to github and verify that the website has the proper files for your solution. That is what I will download for testing.
 
@@ -91,5 +91,6 @@ Each project has a hard deadline and only those projects working correctly befor
 * Binary and n-ary trees
 * Tries for efficient word look up
 * Graphs via adjacency lists and adjacency matrices; shortest path algorithm
+* todo: Topo sort, all combos, merge, find/search, collect/filter
 
 The use of recursive algorithms will be emphasized frequently and wherever appropriate to reinforce this critical mechanism. Discussion of formal algorithm complexity will also be emphasized throughout the lectures.
