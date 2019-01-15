@@ -64,13 +64,13 @@ For your convenience, here are the algorithms extracted from the Liu *et al* pap
 
 <table border="0">
 <tr>
-<td valign="top"><img src="images/iForest.png" width="350"></td><td><img src="images/iTree.png" width="350"></td>
+<td width="50%" valign="top"><img src="images/iForest.png" width="350"></td><td width="50%" valign="top"><img src="images/iTree.png" width="350"></td>
 </tr>
 <tr>
 <td valign="top">
 <img src="images/PathLength.png" width="350">
 </td>
-<td>
+<td valign="top">
 Please use this version of average path length <tt>c()</tt>, not the one in the original paper:<br>
 <img src="images/avgPathLength.png" width="320">
 
