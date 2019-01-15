@@ -1,7 +1,15 @@
 # Isolation Forest Implementation
 
 
-[Isolation Forest](https://www.researchgate.net/publication/224384174_Isolation_Forest)
+The goal of this project is to implement the original [Isolation Forest](IsolationForestPaper.pdf) algorithm by Fei Tony Liu, Kai Ming Ting, and Zhi-Hua Zhou.  (A later version of this work is also available: [Isolation-based Anomaly Detection](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.673.5779&rep=rep1&type=pdf).) There are two general approaches to anomaly detection: 
+
+1. model what normal looks like and then look for nonnormal observations
+2. focus on the anomalies, which are few and different; this is interesting new approach by the authors of isolation forests.
+
+The isolation forest algorithm is original and beautiful in its simplicity; and also seems to work very well, with a few known weaknesses. The academic paper is extremely readable
+
+
+I have provided some useful code to plot the results of and test your implementation.
 
 ## Data sets
 
@@ -45,8 +53,21 @@ These files are not that large, but for a pure Python solution to the isolation 
 </tr>
 </table>
 
+## Algorithm
+
 select features rather than random feature 5%
 
+Here are the algorithms from the Liu *et al* paper:
+
+<img src="images/iForest.png" width="350">
+
+<img src="images/iTree.png" width="350">
+
+<img src="images/PathLength.png" width="350">
+
+<img src="images/avgPathLength.png" width="320">
+
+<img src="images/score.png" width="150">
 
 compute n_nodes
 
