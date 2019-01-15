@@ -29,7 +29,7 @@ These files are not that large, but a pure Python solution for isolation forest 
 Using [plot_anomalies.py](https://github.com/parrt/msds689/blob/master/projects/iforest/plot_anomalies.py), which I provide for you, you can see the results of the isolation forest trying to detect anomalies. These data sets all have known targets indicating normal versus anomaly, but this information is only used during testing and not during training. In other words, we use this information to discover how well we can separate the distribution of normal versus anomalous observations.  The section provides a number of results, but yours might look different because of the inherent randomness involved in selecting subsets of the data and constructing random trees. (click on the images to enlarge.)
 
 <center>
-<table border=0>
+<table border="0">
 <tr><td>http.csv, 200 trees, 99% desired TPR</td></tr>
 <tr>
 <td border=0>
@@ -38,7 +38,7 @@ Using [plot_anomalies.py](https://github.com/parrt/msds689/blob/master/projects/
 </table>
 </center>
 
-<table border=0>
+<table border="0">
 <tr><td>creditcard.csv, 200 trees, 80% desired TPR</td><td>creditcard.csv, 200 trees, 90% desired TPR</td></tr>
 <tr>
 <td border=0>
@@ -48,7 +48,7 @@ Using [plot_anomalies.py](https://github.com/parrt/msds689/blob/master/projects/
 </tr>
 </table>
 
-<table border=0>
+<table border="0">
 <tr><td> cancer, 300 trees, 70% desired TPR</td><td> cancer, 300 trees, 80% desired TPR</td></tr>
 <tr>
 <td border=0>
@@ -62,18 +62,25 @@ Using [plot_anomalies.py](https://github.com/parrt/msds689/blob/master/projects/
 
 For your convenience, here are the algorithms extracted from the Liu *et al* paper:
 
-<img src="images/iForest.png" width="350">
-
-<img src="images/iTree.png" width="350">
-
+<table border="0">
+<tr>
+<td valign="top"><img src="images/iForest.png" width="350"></td><td><img src="images/iTree.png" width="350"></td>
+</tr>
+<tr>
+<td valign="top">
 <img src="images/PathLength.png" width="350">
-
+</td>
+</td>
 Please use this version of average path length `c()`, not the one in the original paper:
 <img src="images/avgPathLength.png" width="320">
 
 Then finally here's the scoring formula:
 
 <img src="images/score.png" width="150">
+</td>
+</tr>
+</table>
+
 
 where "*H(i)* is the harmonic number and it can be estimated by *ln(i)* + 0.5772156649 (Euler’s constant)."
 
