@@ -8,20 +8,25 @@ The goal of this project is to implement the original [Isolation Forest](Isolati
 
 The isolation forest algorithm is original and beautiful in its simplicity; and also seems to work very well, with a few known weaknesses. The academic paper is extremely readable
 
+I have provided some useful code to test and plot the results of your implementation.
 
-I have provided some useful code to plot the results of and test your implementation.
+**WARNING**: There are sample implementations out there. I will be using [MOSS](https://theory.stanford.edu/~aiken/moss) to compare your programs together and against the known implementations. For example, here are two sample implementations:  [mgckind/iso_forest at github](https://github.com/mgckind/iso_forest/blob/master/iso_forest.py) and [Unsupervised Fraud Detection: Isolation Forest at Kaggle](https://www.kaggle.com/rgaddati/unsupervised-fraud-detection-isolation-forest). You may read these but absolutely no copying. You must learn to implement recursive tree algorithms yourself.
 
 ## Data sets
 
 For this project, we'll use three data sets:
 
-* [Credit card fraud](https://www.kaggle.com/mlg-ulb/creditcardfraud); download, unzip to get `creditcard.csv`
+* [Kaggle credit card fraud competition data set](https://www.kaggle.com/mlg-ulb/creditcardfraud); download, unzip to get `creditcard.csv`
 
 * Get cancer data into `cancer.csv` by executing [savecancer.csv](https://github.com/parrt/msds689/blob/master/projects/iforest/savecancer.py) that I provide.
 
 * [http.csv.zip](https://github.com/parrt/msds689/blob/master/projects/iforest/http.csv.zip); download, unzip to get `http.csv`.
 
-These files are not that large, but for a pure Python solution to the isolation forest, they are too big.  For example, my solution takes a few minutes to plow through the credit card data. (My hybrid python/C solution takes about two seconds.)
+These files are not that large, but a pure Python solution for isolation forest takes too long on the whole file: 2.5 minutes on `creditcard.csv` and 5 minutes on `http.csv`.  (My hybrid python/C solution takes about two seconds. ha!)
+
+## Visualization of normal versus anomaly separation
+
+Using [plot_anomalies.py](https://github.com/parrt/msds689/blob/master/projects/iforest/plot_anomalies.py), which I provide for you, you can see the results of the isolation forest trying to detect anomalies. These data sets all have known targets indicating normal versus anomaly, but this information is only used during testing and not during training. In other words, we use this information to discover how well we can separate the distribution of normal versus anomalous observations.  The section provides a number of results, but yours might look different because of the inherent randomness involved in selecting subsets of the data and constructing random trees.
 
 <center>
 <table border=0>
@@ -65,18 +70,20 @@ Here are the algorithms from the Liu *et al* paper:
 
 <img src="images/PathLength.png" width="350">
 
+Please use this version of average path length `c()`, not the one in the original paper:
 <img src="images/avgPathLength.png" width="320">
+
+Then finally here's the scoring formula:
+
 <img src="images/score.png" width="150">
 
 where "*H(i)* is the harmonic number and it can be estimated by *ln(i)* + 0.5772156649 (Euler’s constant)."
 
 compute n_nodes
 
-Sample code: https://github.com/mgckind/iso_forest/blob/master/iso_forest.py
-
 ## Scoring results
 
-[score.py]()
+[score.py](https://github.com/parrt/msds689/blob/master/projects/iforest/score.py)
 
 ```
 Running noise=False improved=False
@@ -95,6 +102,8 @@ INFO cancer.csv 129930 total nodes in 1000 trees
 INFO cancer.csv score time 2.38s
 SUCCESS cancer.csv 1000 trees at desired TPR 75.0% getting FPR 0.3165%
 ```
+
+## Improving on the original algorithm
 
 With 5 noise columns:
 
@@ -118,7 +127,6 @@ INFO cancer.csv 128342 total nodes in 1000 trees
 INFO cancer.csv score time 2.37s
 SUCCESS cancer.csv 1000 trees at desired TPR 75.0% getting FPR 0.3137%
 ```
-
 
 With 5 noise columns and 3 candidates:
 
