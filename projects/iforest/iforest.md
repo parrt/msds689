@@ -66,16 +66,17 @@ Here are the algorithms from the Liu *et al* paper:
 <img src="images/PathLength.png" width="350">
 
 <img src="images/avgPathLength.png" width="320">
-
 <img src="images/score.png" width="150">
+
+where "*H(i)* is the harmonic number and it can be estimated by *ln(i)* + 0.5772156649 (Euler’s constant)."
 
 compute n_nodes
 
-Sample code
+Sample code: https://github.com/mgckind/iso_forest/blob/master/iso_forest.py
 
-https://github.com/mgckind/iso_forest/blob/master/iso_forest.py
+## Scoring results
 
-Results
+[score.py]()
 
 ```
 Running noise=False improved=False
