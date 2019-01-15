@@ -12,7 +12,13 @@ For this project, we'll use three data sets:
 
 These files are not that large, but for a pure Python solution to the isolation forest, they are too big.  For example, my solution takes a few minutes to plow through the credit card data. (My hybrid python/C solution takes about two seconds.)
 
+<table border=0>
+<tr><td>http, 200 trees, 99% desired TPR</td></tr>
+<tr>
+<td border=0>
 <a href="images/http-200-99.svg"><img src="images/http-200-99.svg" width="400"></a>
+</tr>
+</table>
 
 <table border=0>
 <tr><td>creditcard.csv, 200 trees, 80% desired TPR</td><td>creditcard.csv, 200 trees, 90% desired TPR</td></tr>
@@ -25,6 +31,7 @@ These files are not that large, but for a pure Python solution to the isolation 
 </table>
 
 <table border=0>
+<tr><td> cancer, 300 trees, 70% desired TPR</td><td> cancer, 300 trees, 80% desired TPR</td></tr>
 <tr>
 <td border=0>
 <a href="images/cancer-300-70.svg"><img src="images/cancer-300-70.svg" width="400"></a>
