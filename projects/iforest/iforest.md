@@ -15,7 +15,7 @@ These files are not that large, but for a pure Python solution to the isolation 
 <a href="images/http-200-99.svg"><img src="images/http-200-99.svg" width="400"></a>
 
 <table border=0>
-<tr><td>creditcard.csv, 200 trees, 80% desired TPR</td><td></td>creditcard.csv, 200 trees, 90% desired TPR</tr>
+<tr><td>creditcard.csv, 200 trees, 80% desired TPR</td><td>creditcard.csv, 200 trees, 90% desired TPR</td></tr>
 <tr>
 <td border=0>
 <a href="images/creditcard-200-80.svg"><img src="images/creditcard-200-80.svg" width="400"></a>
