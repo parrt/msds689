@@ -4,18 +4,18 @@
 
 <table border=0>
 <tr>
-<td>
+<td border=0>
 <a href="images/creditcard-200-80.svg"><img src="images/creditcard-200-80.svg" width="400"></a>
-<td>
+<td border=0>
 <a href="images/creditcard-200-90.svg"><img src="images/creditcard-200-90.svg" width="400"></a>
 </tr>
 </table>
 
 <table border=0>
 <tr>
-<td>
+<td border=0>
 <a href="images/cancer-300-70.svg"><img src="images/cancer-300-70.svg" width="400"></a>
-<td>
+<td border=0>
 <a href="images/cancer-300-80.svg"><img src="images/cancer-300-80.svg" width="400"></a>
 </tr>
 </table>
