@@ -2,14 +2,20 @@
 
 ## Data sets
 
-https://www.kaggle.com/mlg-ulb/creditcardfraud
+For this project, we'll use three data sets:
 
-Get cancer data into `cancer.csv` with `savecancer.csv`.
+* [Credit card fraud](https://www.kaggle.com/mlg-ulb/creditcardfraud); download, unzip to get `creditcard.csv`
 
+* Get cancer data into `cancer.csv` by executing [savecancer.csv](https://github.com/parrt/msds689/blob/master/projects/iforest/savecancer.py) that I provide.
+
+* [http.csv.zip](https://github.com/parrt/msds689/blob/master/projects/iforest/http.csv.zip); download, unzip to get `http.csv`.
+
+These files are not that large, but for a pure Python solution to the isolation forest, they are too big.  For example, my solution takes a few minutes to plow through the credit card data. (My hybrid python/C solution takes about two seconds.)
 
 <a href="images/http-200-99.svg"><img src="images/http-200-99.svg" width="400"></a>
 
 <table border=0>
+<tr><td>creditcard.csv, 200 trees, 80% desired TPR</td><td></td>creditcard.csv, 200 trees, 90% desired TPR</tr>
 <tr>
 <td border=0>
 <a href="images/creditcard-200-80.svg"><img src="images/creditcard-200-80.svg" width="400"></a>
