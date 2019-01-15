@@ -1,5 +1,8 @@
 # Isolation Forest Implementation
 
+
+[Isolation Forest](https://www.researchgate.net/publication/224384174_Isolation_Forest)
+
 ## Data sets
 
 For this project, we'll use three data sets:
@@ -12,13 +15,15 @@ For this project, we'll use three data sets:
 
 These files are not that large, but for a pure Python solution to the isolation forest, they are too big.  For example, my solution takes a few minutes to plow through the credit card data. (My hybrid python/C solution takes about two seconds.)
 
+<center>
 <table border=0>
-<tr><td>http, 200 trees, 99% desired TPR</td></tr>
+<tr><td>http.csv, 200 trees, 99% desired TPR</td></tr>
 <tr>
 <td border=0>
 <a href="images/http-200-99.svg"><img src="images/http-200-99.svg" width="400"></a>
 </tr>
 </table>
+</center>
 
 <table border=0>
 <tr><td>creditcard.csv, 200 trees, 80% desired TPR</td><td>creditcard.csv, 200 trees, 90% desired TPR</td></tr>
