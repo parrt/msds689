@@ -249,3 +249,9 @@ SUCCESS cancer.csv 1000 trees at desired TPR 75.0% getting FPR 0.3866%
 ```
 
 The scoring mechanism is sensitive to the improved algorithm and is a bit more relaxed because it knows the improved algorithm is trying to work on noisy columns.
+
+## Deliverables
+
+You must complete and add the following file to the root of your `iforest-`*userid* repository in the USF-MSDS689 organization.
+
+* [iforest.py](https://github.com/parrt/msds689/blob/master/projects/iforest/iforest.py)
