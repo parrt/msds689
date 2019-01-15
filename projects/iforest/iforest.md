@@ -70,11 +70,11 @@ For your convenience, here are the algorithms extracted from the Liu *et al* pap
 <td valign="top">
 <img src="images/PathLength.png" width="350">
 </td>
-</td>
-Please use this version of average path length `c()`, not the one in the original paper:
+<td>
+Please use this version of average path length <tt>c()</tt>, not the one in the original paper:<br>
 <img src="images/avgPathLength.png" width="320">
 
-Then finally here's the scoring formula:
+<p>Then finally here's the scoring formula:<br>
 
 <img src="images/score.png" width="150">
 </td>
