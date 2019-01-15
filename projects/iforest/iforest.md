@@ -1,5 +1,12 @@
 # Isolation Forest Implementation
 
+## Data sets
+
+https://www.kaggle.com/mlg-ulb/creditcardfraud
+
+Get cancer data into `cancer.csv` with `savecancer.csv`.
+
+
 <a href="images/http-200-99.svg"><img src="images/http-200-99.svg" width="400"></a>
 
 <table border=0>
@@ -22,7 +29,6 @@
 
 select features rather than random feature 5%
 
-Get cancer data into `cancer.csv` with `savecancer.csv`.
 
 compute n_nodes
 
