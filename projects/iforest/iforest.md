@@ -77,12 +77,12 @@ Please use this version of average path length <tt>c()</tt>, not the one in the 
 <p>Then finally here's the scoring formula:<br>
 
 <img src="images/score.png" width="150">
+
+<p>where "<i>H(i)</i> is the harmonic number and it can be estimated by <i>ln(i)</i> + 0.5772156649 (Euler’s constant)."
 </td>
 </tr>
 </table>
 
-
-where "*H(i)* is the harmonic number and it can be estimated by *ln(i)* + 0.5772156649 (Euler’s constant)."
 
 You also have to compute the number of nodes as you construct trees. The scoring test rig uses tree field `n_nodes`:
 
