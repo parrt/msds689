@@ -26,7 +26,7 @@ These files are not that large, but a pure Python solution for isolation forest 
 
 ## Visualization of normal versus anomaly separation
 
-Using [plot_anomalies.py](https://github.com/parrt/msds689/blob/master/projects/iforest/plot_anomalies.py), which I provide for you, you can see the results of the isolation forest trying to detect anomalies. These data sets all have known targets indicating normal versus anomaly, but this information is only used during testing and not during training. In other words, we use this information to discover how well we can separate the distribution of normal versus anomalous observations.  The section provides a number of results, but yours might look different because of the inherent randomness involved in selecting subsets of the data and constructing random trees.
+Using [plot_anomalies.py](https://github.com/parrt/msds689/blob/master/projects/iforest/plot_anomalies.py), which I provide for you, you can see the results of the isolation forest trying to detect anomalies. These data sets all have known targets indicating normal versus anomaly, but this information is only used during testing and not during training. In other words, we use this information to discover how well we can separate the distribution of normal versus anomalous observations.  The section provides a number of results, but yours might look different because of the inherent randomness involved in selecting subsets of the data and constructing random trees. (click on the images to enlarge.)
 
 <center>
 <table border=0>
@@ -62,7 +62,7 @@ Using [plot_anomalies.py](https://github.com/parrt/msds689/blob/master/projects/
 
 select features rather than random feature 5%
 
-Here are the algorithms from the Liu *et al* paper:
+For your convenience, here are the algorithms extracted from the Liu *et al* paper:
 
 <img src="images/iForest.png" width="350">
 
@@ -79,11 +79,100 @@ Then finally here's the scoring formula:
 
 where "*H(i)* is the harmonic number and it can be estimated by *ln(i)* + 0.5772156649 (Euler’s constant)."
 
-compute n_nodes
+You also have to compute the number of nodes as you construct trees. The scoring test rig uses tree field `n_nodes`:
+
+```python
+n_nodes = sum([t.n_nodes for t in it.trees])
+print(f"INFO {datafile} {n_nodes} total nodes in {n_trees} trees")
+```
+
+## The required API
+
+Your implementation must be in a file called `iforest.py` and define the following classes and methods
+
+```python
+class IsolationTreeEnsemble:
+    def __init__(self, sample_size, n_trees=10):
+        ...
+        
+    def fit(self, X:np.ndarray, improved=False):
+        """
+        Given a 2D matrix of observations, create an ensemble of IsolationTree
+        objects and store them in a list: self.trees.  Convert DataFrames to
+        ndarray objects.
+        """
+        if isinstance(X, pd.DataFrame):
+            X = X.values
+        ...
+        return self
+
+    def path_length(self, X:np.ndarray) -> np.ndarray:
+        """
+        Given a 2D matrix of observations, X, compute the average path length
+        for each observation in X.  Compute the path length for x_i using every
+        tree in self.trees then compute the average for each x_i.  Return an
+        ndarray of shape (len(X),1).
+        """
+        if isinstance(X, pd.DataFrame):
+            X = X.values
+        ...
+
+    def anomaly_score(self, X:np.ndarray) -> np.ndarray:
+        """
+        Given a 2D matrix of observations, X, compute the anomaly score
+        for each x_i observation, returning an ndarray of them.
+        """
+        ...
+
+    def predict_from_anomaly_scores(self, scores:np.ndarray, threshold:float) -> np.ndarray:
+        """
+        Given an array of scores and a score threshold, return an array of
+        the predictions: 1 for any score >= the threshold and 0 otherwise.
+        """
+        ...
+
+    def predict(self, X:np.ndarray, threshold:float) -> np.ndarray:
+        "A shorthand for calling anomaly_score() and predict_from_anomaly_scores()."
+        ...
+```
+
+```python
+class IsolationTree:
+    def __init__(self, height_limit):
+        ...
+
+    def fit(self, X:np.ndarray, improved=False):
+        """
+        Given a 2D matrix of observations, create an isolation tree. Set field
+        self.root to the root of that tree and return it.
+
+        If you are working on an improved algorithm, check parameter "improved"
+        and switch to your new functionality else fall back on your original code.
+        """
+        ...
+        return self.root
+```
+
+You will either a single tree node definition, or one for decision nodes and one for leaves. That implementation details up to you.
+
+You also need to implement a function used by the scoring test rig:
+ 
+```python
+def find_TPR_threshold(y, scores, desired_TPR):
+    """
+    Start at score threshold 1.0 and work down until we hit desired TPR.
+    Step by 0.01 score increments. For each threshold, compute the TPR
+    and FPR to see if we've reached to the desired TPR. If so, return the
+    score threshold and FPR.
+    """
+    ...
+    return threshold, FPR
+```
+
 
 ## Scoring results
 
-[score.py](https://github.com/parrt/msds689/blob/master/projects/iforest/score.py)
+Using [score.py](https://github.com/parrt/msds689/blob/master/projects/iforest/score.py), here is a sample run:
 
 ```
 Running noise=False improved=False
@@ -103,9 +192,13 @@ INFO cancer.csv score time 2.38s
 SUCCESS cancer.csv 1000 trees at desired TPR 75.0% getting FPR 0.3165%
 ```
 
+Due to the subsampling of the original data said and the inherent random nature of isolation for us, your results will differ.  I'm hoping that the variance is not so high that valid programs fail the scoring, but let me know.
+
+The indicated required score values were set using my machine and my implementation. Then I gave a range above that that are still allowed as valid.
+
 ## Improving on the original algorithm
 
-With 5 noise columns:
+If you'd like to add noise to see how your algorithm performs, turn on commandline parameter `-noise`. With 5 noise columns, here's what one of my sample runs looks like:
 
 ```
 Running noise=True improved=False
@@ -128,7 +221,9 @@ INFO cancer.csv score time 2.37s
 SUCCESS cancer.csv 1000 trees at desired TPR 75.0% getting FPR 0.3137%
 ```
 
-With 5 noise columns and 3 candidates:
+Notice that it is starting to fail because of poor performance.
+
+The scoring mechanism knows how to switch mechanisms through the use of the command line option `-improved`.  My improved algorithm with 5 noise columns, looks like this:
 
 ```
 Running noise=True improved=True
@@ -147,3 +242,5 @@ INFO cancer.csv 108890 total nodes in 1000 trees
 INFO cancer.csv score time 2.39s
 SUCCESS cancer.csv 1000 trees at desired TPR 75.0% getting FPR 0.3866%
 ```
+
+The scoring mechanism is sensitive to the improved algorithm and is a bit more relaxed because it knows the improved algorithm is trying to work on noisy columns.
