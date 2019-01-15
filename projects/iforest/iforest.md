@@ -255,3 +255,5 @@ The scoring mechanism is sensitive to the improved algorithm and is a bit more r
 You must complete and add the following file to the root of your `iforest-`*userid* repository in the USF-MSDS689 organization.
 
 * [iforest.py](https://github.com/parrt/msds689/blob/master/projects/iforest/iforest.py)
+
+Your code must satisfy the scoring.py requirements, such as executing within the required time and with the required FPR.
