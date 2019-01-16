@@ -75,9 +75,11 @@ Your `oohtable.py` file also should not have code that gets executed when other 
 
 The tests described in the next section should execute very quickly, as in less than a second.
 
-## Testing 
+## Evaluation
 
-The unit tests I have provided for you test all of the functions described above. Because they all use the index notation, `table[key]`, you should get `__setitem__` and `__getitem__` working first.
+To evaluate your projects, we will run the unit tests.  The unit tests I have provided for you test all of the functions described above. Because they all use the index notation, `table[key]`, you should get `__setitem__` and `__getitem__` working first.
+
+We will grade in a binary fashion (works or doesn't) because you have all of the known tests.
 
 Please make a copy of [test_oohtable.py](test_oohtable.py) in the same directory as your `oohtable.py` file and then run your tests either from your development environment or the command line. Ultimately, you want the test results to look like the following:
 
@@ -116,6 +118,6 @@ test_oohtable.py::test_wordfreq PASSED                                          
 
 You must complete and add the following file to the root of your `oohtable-`*userid* repository in the USF-MSDS689 organization.
 
-* oohtable.py
+* `oohtable.py`
 
 

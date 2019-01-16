@@ -268,6 +268,10 @@ You can try using [dask](https://github.com/dask/dask) or [Python 3's multiproce
 
 There is a way to share *global* data without having to pass it back and forth, but this would mean only allowing one isolation forest instance in your program at once. (Having 2 or more would overwrite that same shared global data.)  Servers, for example, might have thousands of isolation forests running at the same time so this is not a good solution, but I guess I'd be okay with it for the purposes of this project.
 
+## Evaluation
+
+To evaluate your projects, we will run the `score.py` file with all data files in same directory.  We will grade in a binary fashion (works or doesn't) because you have all of the known tests.
+
 ## Deliverables
 
 You must complete and add the following file to the **root** of your `iforest-`*userid* repository in the USF-MSDS689 organization.
@@ -276,7 +280,7 @@ You must complete and add the following file to the **root** of your `iforest-`*
 
 **Requirements**:
 
-* Your code must satisfy the `scoring.py` requirements, such as executing within the required time and with the required FPR. Get your code working first, then figure out how to make `path_length()` fast.  Don't worry about `fit()` as the obvious implementation is fast enough.
+* Your code must satisfy the `score.py` requirements, such as executing within the required time and with the required FPR. Get your code working first, then figure out how to make `path_length()` fast.  Don't worry about `fit()` as the obvious implementation is fast enough.
 
 * Please do not make subdirectories. Keep your code at the root of your repo.  
 * Do not add the data files to the repository.
