@@ -6,7 +6,7 @@ The goal of this project is to implement the original [Isolation Forest](Isolati
 1. model what normal looks like and then look for nonnormal observations
 2. focus on the anomalies, which are few and different. This is the interesting and relatively-new approach taken by the authors of isolation forests.
 
-The isolation forest algorithm is original and beautiful in its simplicity; and also seems to work very well, with a few known weaknesses. The academic paper is extremely readable
+The isolation forest algorithm is original and beautiful in its simplicity; and also seems to work very well, with a few known weaknesses. The academic paper is extremely readable so you should start there.
 
 I have provided some useful code to test and plot the results of your implementation.
 
@@ -23,6 +23,8 @@ For this project, we'll use three data sets:
 * [http.csv.zip](https://github.com/parrt/msds689/blob/master/projects/iforest/http.csv.zip); download, unzip to get `http.csv`.
 
 These files are not that large, but a pure Python solution for isolation forest takes too long on the whole file: 2.5 minutes on `creditcard.csv` and 5 minutes on `http.csv`.  (My hybrid python/C solution takes about two seconds. ha!)
+
+My code assumes the data files are in the same directory as the code.
 
 ## Visualization of normal versus anomaly separation
 
@@ -158,7 +160,7 @@ class IsolationTree:
         return self.root
 ```
 
-You will either a single tree node definition, or one for decision nodes and one for leaves. That implementation details up to you.
+You will need either a single tree node definition, or one for decision nodes and one for leaves. That implementation detail up to you. (I don't think that the type of the nodes is exposed to the support code I provide, but let me know if it is.)
 
 You also need to implement a function used by the scoring test rig:
  
@@ -197,13 +199,13 @@ INFO cancer.csv score time 2.38s
 SUCCESS cancer.csv 1000 trees at desired TPR 75.0% getting FPR 0.3165%
 ```
 
-Due to the subsampling of the original data said and the inherent random nature of isolation for us, your results will differ.  I'm hoping that the variance is not so high that valid programs fail the scoring, but let me know.
+Due to the subsampling of the original data said and the inherent random nature of isolation forest, your results will differ even from run to run.  I'm hoping that the variance is not so high that valid programs fail the scoring, but let me know.
 
-The indicated required score values were set using my machine and my implementation. Then I gave a range above that that are still allowed as valid.
+The indicated required score values were set using my machine and my implementation. Then I gave a range above that that are still considered to be valid.
 
 ## Improving on the original algorithm
 
-If you'd like to add noise to see how your algorithm performs, turn on commandline parameter `-noise`. With 5 noise columns, here's what one of my sample runs looks like:
+One of the known weaknesses of the original isolation forest is that it can't handle lots of irrelevant or noisy features (columns).  If you'd like to add noise to see how your algorithm performs, turn on commandline parameter `-noise`. With 5 noise columns, here's what one of my sample runs looks like:
 
 ```
 Running noise=True improved=False
@@ -248,12 +250,37 @@ INFO cancer.csv score time 2.39s
 SUCCESS cancer.csv 1000 trees at desired TPR 75.0% getting FPR 0.3866%
 ```
 
+###  Reducing noise sensitivity
+
 The scoring mechanism is sensitive to the improved algorithm and is a bit more relaxed because it knows the improved algorithm is trying to work on noisy columns.
+
+You have a number of options for trying to improve the algorithm. The authors suggest computing and sorting by feature kurtosis then using a subset of those features during training.   Because we know how many features are original and how many are noise, this will probably work. But, in general, we would not know how many of our features are irrelevant so this approach might not work. Also it will significantly impact your training time I would say.
+
+Another approach involves trying to select features during training when you split at decision nodes. Think about how you might decide whether one candidate (column and split value) is better than another. How would you decide what the candidates are? I've determined that there is a mechanism here that holds great promise, as you can see from my test results running with noise and the improved algorithm.
+
+Let's see how well you can do!!!
+
+### Increasing speed
+
+I also think that speed will be a problem for your first implementation. See how fast you can get `path_length()` and see if you can beat my speed! To go much faster than I have in `score.py`, I had to rely on [Cython](https://cython.org/) for a 40x boost.   Then, I finally resorted to pure C code and got 150x speed boost over the Python-only version. :) Please stick with pure Python for this project. (The python-C bridge was incredibly painful to figure out beyond trivial examples, despite decades of experience. ugh!)
+
+You can try using [dask](https://github.com/dask/dask) or [Python 3's multiprocessing](https://docs.python.org/3/library/multiprocessing.html), but please do not use spark as that will be hard for me to test.  The fundamental problem we have with multiprocessing in Python lies with a little gremlin known as the GIL (global interpreter lock) that prevents multiple threads from operating on the same Python data at the same time. To get around this, the support libraries can launch separate processes with their own Python interpreter that is running your same code. This means, of course, that we have to get data from one process to the other, which means pickling it and sending it across the socket or pipe to the other process and then back again. This negates the benefits of multiprocessing for the most part. 
+
+There is a way to share *global* data without having to pass it back and forth, but this would mean only allowing one isolation forest instance in your program at once. (Having 2 or more would overwrite that same shared global data.)  Servers, for example, might have thousands of isolation forests running at the same time so this is not a good solution, but I guess I'd be okay with it for the purposes of this project.
 
 ## Deliverables
 
-You must complete and add the following file to the root of your `iforest-`*userid* repository in the USF-MSDS689 organization.
+You must complete and add the following file to the **root** of your `iforest-`*userid* repository in the USF-MSDS689 organization.
 
 * [iforest.py](https://github.com/parrt/msds689/blob/master/projects/iforest/iforest.py)
 
-Your code must satisfy the scoring.py requirements, such as executing within the required time and with the required FPR.
+**Requirements**:
+
+* Your code must satisfy the `scoring.py` requirements, such as executing within the required time and with the required FPR. Get your code working first, then figure out how to make `path_length()` fast.  Don't worry about `fit()` as the obvious implementation is fast enough.
+
+* Please do not make subdirectories. Keep your code at the root of your repo.  
+* Do not add the data files to the repository.
+* Please stick with pure Python for this project.
+* Do not use lots of random libraries that might not exist on my testing machine. For example, my implementation only uses numpy, pandas, and scikit-learn's `confusion_matrix()` (for use in `find_TPR_threshold()`).
+
+Good luck!!!
