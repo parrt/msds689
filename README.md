@@ -7,6 +7,10 @@ This course give students a deeper and more general view of data structures and 
 
 This course is part of the [MS in Data Science program at the University of San Francisco](https://www.usfca.edu/arts-sciences/graduate-programs/data-science).
 
+# Resources
+
+I'll be pulling some material from Kleinberg and Tardos, *Algorithm Design*. US copyright law allows me to make copies of small portions of books for educational use, which I have done. Please see compressed pdf `kleinberg-common-running-times.7z` in Canvas course files area. (Do not post that material publicly.)
+
 # Course Learning Objectives (CLOs)
 
 By the end of this course, students will be able to:
@@ -84,11 +88,12 @@ Each project has a hard deadline and only those projects working correctly befor
 
 # Syllabus
 
-* Introduction to algorithm complexity (“Big-O” notation)
 * Review hash table construction
+* Introduction to algorithm complexity (“Big-O” notation)
+* Binary and n-ary trees
+* Isolation Forests
 * Searching, sorting, distance metrics (e.g., Levenshtein distance) for arrays and strings
 * Linked lists and common operations, such as insertion and deletion
-* Binary and n-ary trees
 * Tries for efficient word look up
 * Graphs via adjacency lists and adjacency matrices; shortest path algorithm
 * todo: Topo sort, all combos, merge, find/search, collect/filter
