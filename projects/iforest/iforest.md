@@ -183,20 +183,20 @@ Using [score.py](https://github.com/parrt/msds689/blob/master/projects/iforest/s
 
 ```
 Running noise=False improved=False
-INFO creditcard.csv fit time 0.21s
-INFO creditcard.csv 17250 total nodes in 200 trees
-INFO creditcard.csv score time 12.78s
-SUCCESS creditcard.csv 200 trees at desired TPR 80.0% getting FPR 0.0823%
+INFO creditcard.csv fit time 0.23s
+INFO creditcard.csv 18804 total nodes in 200 trees
+INFO creditcard.csv score time 14.54s
+SUCCESS creditcard.csv 200 trees at desired TPR 80.0% getting FPR 0.0300%
 
-INFO http.csv fit time 0.25s
-INFO http.csv 20326 total nodes in 300 trees
-INFO http.csv score time 21.23s
-SUCCESS http.csv 300 trees at desired TPR 99.0% getting FPR 0.0063%
+INFO http.csv fit time 0.28s
+INFO http.csv 22430 total nodes in 300 trees
+INFO http.csv score time 23.08s
+SUCCESS http.csv 300 trees at desired TPR 99.0% getting FPR 0.0053%
 
-INFO cancer.csv fit time 1.41s
-INFO cancer.csv 129930 total nodes in 1000 trees
-INFO cancer.csv score time 2.38s
-SUCCESS cancer.csv 1000 trees at desired TPR 75.0% getting FPR 0.3165%
+INFO cancer.csv fit time 0.08s
+INFO cancer.csv 8204 total nodes in 1000 trees
+INFO cancer.csv score time 0.73s
+SUCCESS cancer.csv 1000 trees at desired TPR 75.0% getting FPR 0.2857%
 ```
 
 Due to the subsampling of the original data said and the inherent random nature of isolation forest, your results will differ even from run to run.  I'm hoping that the variance is not so high that valid programs fail the scoring, but let me know.
@@ -210,22 +210,21 @@ One of the known weaknesses of the original isolation forest is that it can't ha
 ```
 Running noise=True improved=False
 INFO creditcard.csv fit time 0.24s
-INFO creditcard.csv 19758 total nodes in 200 trees
-INFO creditcard.csv score time 12.73s
-FAIL creditcard.csv FPR 0.1143 > 0.05 +- 30%
-ERRORS creditcard.csv 1 errors 200 trees at desired TPR  80.0% getting FPR 0.1143%
+INFO creditcard.csv 18742 total nodes in 200 trees
+INFO creditcard.csv score time 15.19s
+SUCCESS creditcard.csv 200 trees at desired TPR 80.0% getting FPR 0.0360%
 
-INFO http.csv fit time 0.36s
-INFO http.csv 30244 total nodes in 300 trees
-INFO http.csv score time 20.09s
-FAIL http.csv FPR 0.0734 > 0.006 +- 30%
-FAIL http.csv n_nodes 30244 > 15200 +- 20%
-ERRORS http.csv 2 errors 300 trees at desired TPR  99.0% getting FPR 0.0734%
+INFO http.csv fit time 0.38s
+INFO http.csv 31522 total nodes in 300 trees
+INFO http.csv score time 24.37s
+FAIL http.csv FPR 0.1151 > 0.006 +- 30%
+FAIL http.csv n_nodes 31522 > 22700 +- 20%
+ERRORS http.csv 2 errors 300 trees at desired TPR  99.0% getting FPR 0.1151%
 
-INFO cancer.csv fit time 1.46s
-INFO cancer.csv 128342 total nodes in 1000 trees
-INFO cancer.csv score time 2.37s
-SUCCESS cancer.csv 1000 trees at desired TPR 75.0% getting FPR 0.3137%
+INFO cancer.csv fit time 0.09s
+INFO cancer.csv 8236 total nodes in 1000 trees
+INFO cancer.csv score time 0.81s
+SUCCESS cancer.csv 1000 trees at desired TPR 75.0% getting FPR 0.2521%
 ```
 
 Notice that it is starting to fail because of poor performance.
@@ -234,20 +233,20 @@ The scoring mechanism knows how to switch mechanisms through the use of the comm
 
 ```
 Running noise=True improved=True
-INFO creditcard.csv fit time 0.27s
-INFO creditcard.csv 15836 total nodes in 200 trees
-INFO creditcard.csv score time 13.00s
-SUCCESS creditcard.csv 200 trees at desired TPR 80.0% getting FPR 0.0272%
+INFO creditcard.csv fit time 0.25s
+INFO creditcard.csv 15920 total nodes in 200 trees
+INFO creditcard.csv score time 14.66s
+SUCCESS creditcard.csv 200 trees at desired TPR 80.0% getting FPR 0.0224%
 
-INFO http.csv fit time 0.35s
-INFO http.csv 26284 total nodes in 300 trees
-INFO http.csv score time 20.66s
-SUCCESS http.csv 300 trees at desired TPR 99.0% getting FPR 0.0134%
+INFO http.csv fit time 0.40s
+INFO http.csv 26464 total nodes in 300 trees
+INFO http.csv score time 24.28s
+SUCCESS http.csv 300 trees at desired TPR 99.0% getting FPR 0.0091%
 
-INFO cancer.csv fit time 1.27s
-INFO cancer.csv 108890 total nodes in 1000 trees
-INFO cancer.csv score time 2.39s
-SUCCESS cancer.csv 1000 trees at desired TPR 75.0% getting FPR 0.3866%
+INFO cancer.csv fit time 0.15s
+INFO cancer.csv 7718 total nodes in 1000 trees
+INFO cancer.csv score time 0.82s
+SUCCESS cancer.csv 1000 trees at desired TPR 75.0% getting FPR 0.2857%
 ```
 
 ###  Reducing noise sensitivity
