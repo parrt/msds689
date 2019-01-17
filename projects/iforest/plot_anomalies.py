@@ -73,11 +73,13 @@ def plot_anomalies(X, y, sample_size=256, n_trees = 100, desired_TPR=None, perce
 
 
 if __name__ == '__main__': # dask seems to need this
-    # launch with "python plot_anomalies.py http.csv attack 20000 100 99"
+    # launch with "python plot_anomalies.py http.csv attack 20000 256 100 99"
+    # or, "python plot_anomalies.py cancer.csv diagnosis all 5 1000 80
     datafile = sys.argv[1]
     targetcol = sys.argv[2]
-    n_trees = int(sys.argv[4])
-    desired_TPR = int(sys.argv[5])
+    sample_size = int(sys.argv[5])
+    n_trees = int(sys.argv[5])
+    desired_TPR = int(sys.argv[6])
     desired_TPR /= 100.0
 
     df = pd.read_csv(datafile)
@@ -89,4 +91,4 @@ if __name__ == '__main__': # dask seems to need this
 
     df = df.sample(N)  # grab random subset (too slow otherwise)
     X, y = df.drop(targetcol, axis=1), df[targetcol]
-    plot_anomalies(X, y, n_trees=n_trees, desired_TPR=desired_TPR, bins=15)
+    plot_anomalies(X, y, sample_size=sample_size, n_trees=n_trees, desired_TPR=desired_TPR, bins=15)
