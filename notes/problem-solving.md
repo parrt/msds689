@@ -6,7 +6,7 @@ You might have a successful interview even if you can't solve a specific problem
 
 Here's a good summary of the process I follow when solving a small programming problem.
 
-### First, UNDERSTAND <img align="right" src="images/Thinking-Woman-PNG.png" width="60">
+## First, UNDERSTAND <img align="right" src="images/Thinking-Woman-PNG.png" width="60">
 
 1. Read the description(3x) then restate the problem, either on paper or out loud
 2. Ask if you've understood it correctly
