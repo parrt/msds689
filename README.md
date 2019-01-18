@@ -70,6 +70,7 @@ Each project has a hard deadline and only those projects working correctly befor
 
 # Syllabus
 
+* [Problem-solving](notes/problem-solving.md)
 * Review hash table construction
 * Introduction to algorithm complexity (“Big-O” notation)
 * Binary and n-ary trees
