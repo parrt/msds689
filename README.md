@@ -13,6 +13,8 @@ I'll be pulling some material from Kleinberg and Tardos, *Algorithm Design*. US 
 
 A very useful set of [programming-concepts-for-data-science](https://nbviewer.jupyter.org/github/shik3519/programming-concepts-for-data-science/blob/master/notebooks/03-common%20datastructures%20and%20algorithms.ipynb) by former USF MSDS student [Shikhar Gupta](https://github.com/shik3519).
 
+[10 Steps to Solving a Programming Problem](https://codeburst.io/10-steps-to-solving-a-programming-problem-8a32d1e96d74)
+
 # Course Learning Objectives (CLOs)
 
 By the end of this course, students will be able to:
