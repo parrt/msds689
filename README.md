@@ -11,6 +11,8 @@ This course is part of the [MS in Data Science program at the University of San 
 
 I'll be pulling some material from Kleinberg and Tardos, *Algorithm Design*. US copyright law allows me to make copies of small portions of books for educational use, which I have done. Please see compressed pdf `kleinberg-common-running-times.7z` in Canvas course files area. (Do not post that material publicly.)
 
+A very useful set of [programming-concepts-for-data-science](https://nbviewer.jupyter.org/github/shik3519/programming-concepts-for-data-science/blob/master/notebooks/03-common%20datastructures%20and%20algorithms.ipynb) by former USF MSDS student [Shikhar Gupta](https://github.com/shik3519).
+
 # Course Learning Objectives (CLOs)
 
 By the end of this course, students will be able to:
@@ -37,7 +39,7 @@ By the end of this course, students will be able to:
 * Section 02: Mon/Wed 2:20-4:15PM 
 * Exams: Fri 15 Feb before class 9:15am-9:55, Fri Mar 8 in class 10am for both classes at once (different room likely)
 
-**INSTRUCTION FORMAT**. Class runs for 1:55 hours, 2 days/week. Instructor-student interaction during lecture is encouraged and we'll mix in mini-exercises / labs during class. All programming will be done in the Python 3 programming language, unless otherwise specified.
+**INSTRUCTION FORMAT**. Class runs for 1:55 hours, 2 days/week. Instructor-student interaction during lecture is encouraged and we'll mix in mini-exercises / labs during class. All programming will be done in the Python 3.6 (not 3.7) programming language, unless otherwise specified.
 
 **TARDINESS.** Please be on time for class. It is a big distraction if you come in late.
 
@@ -48,28 +50,6 @@ The golden rule: **You must never represent another person’s work as your own.
 If you ever have questions about what constitutes plagiarism, cheating, or academic dishonesty in my course, please feel free to ask me.
 
 **Note:** Leaving your laptop unattended is a common means for another student to take your work. It is your responsibility to guard your work. Do not leave your printouts laying around or in the trash. *All persons with common code are likely to be considered at fault.*
-
-**USF policies and legal declarations**
-
-*Students with Disabilities*
-
-If you are a student with a disability or disabling condition, or if you think you may have a disability, please contact <a href="/sds">USF Student Disability Services</a> (SDS) for information about accommodations.
-
-*Behavioral Expectations*
-
-All students are expected to behave in accordance with the <a href="/fogcutter">Student Conduct Code</a> and other University policies.
-
-*Academic Integrity*
-
-USF upholds the standards of honesty and integrity from all members of the academic community. All students are expected to know and adhere to the University's <a href="/academic-integrity/">Honor Code</a>.
-
-*Counseling and Psychological Services (CAPS)*
-
-CAPS provides confidential, free <a href="/student-health-safety/caps">counseling</a> to student members of our community.
-
-*Confidentiality, Mandatory Reporting, and Sexual Assault*
-
-For information and resources regarding sexual misconduct or assault visit the <a href="/TITLE-IX">Title IX</a> coordinator or USFs <a href="http://usfca.callistocampus.org" target="_blank">Callisto website</a>.
 
 ## Student evaluation
 
@@ -99,3 +79,25 @@ Each project has a hard deadline and only those projects working correctly befor
 * todo: Topo sort, all combos, merge, find/search, collect/filter
 
 The use of recursive algorithms will be emphasized frequently and wherever appropriate to reinforce this critical mechanism. Discussion of formal algorithm complexity will also be emphasized throughout the lectures.
+
+**USF policies and legal declarations**
+
+*Students with Disabilities*
+
+If you are a student with a disability or disabling condition, or if you think you may have a disability, please contact <a href="/sds">USF Student Disability Services</a> (SDS) for information about accommodations.
+
+*Behavioral Expectations*
+
+All students are expected to behave in accordance with the <a href="/fogcutter">Student Conduct Code</a> and other University policies.
+
+*Academic Integrity*
+
+USF upholds the standards of honesty and integrity from all members of the academic community. All students are expected to know and adhere to the University's <a href="/academic-integrity/">Honor Code</a>.
+
+*Counseling and Psychological Services (CAPS)*
+
+CAPS provides confidential, free <a href="/student-health-safety/caps">counseling</a> to student members of our community.
+
+*Confidentiality, Mandatory Reporting, and Sexual Assault*
+
+For information and resources regarding sexual misconduct or assault visit the <a href="/TITLE-IX">Title IX</a> coordinator or USFs <a href="http://usfca.callistocampus.org" target="_blank">Callisto website</a>.
