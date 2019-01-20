@@ -269,7 +269,7 @@ There is a way to share *global* data without having to pass it back and forth, 
 
 ## Evaluation
 
-To evaluate your projects, we will run the `score.py` file with all data files in same directory.  We will grade in a binary fashion (works or doesn't) because you have all of the known tests.
+To evaluate your projects, we will run the `score.py` file with `-noise` and `-improved` (all data files in same directory).  We will grade in a binary fashion (works or doesn't) because you have all of the known tests.
 
 ## Deliverables
 
