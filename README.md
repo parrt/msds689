@@ -70,9 +70,9 @@ Each project has a hard deadline and only those projects working correctly befor
 
 # Syllabus
 
+* [Introduction to algorithm complexity]() (“Big-O” notation)
 * [Problem-solving](notes/problem-solving.md)
 * Review hash table construction
-* Introduction to algorithm complexity (“Big-O” notation)
 * Binary and n-ary trees
 * Isolation Forests
 * Searching, sorting, distance metrics (e.g., Levenshtein distance) for arrays and strings
