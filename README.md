@@ -71,7 +71,7 @@ Each project has a hard deadline and only those projects working correctly befor
 # Syllabus
 
 * [Measuring execution time](notes/execution-time.ipynb)
-* [Introduction to algorithm complexity](notes/complexity.md) (“Big-O” notation)
+* [Introduction to algorithm complexity](notes/complexity.pdf) (“Big-O” notation)
 * [Problem-solving](notes/problem-solving.md)
 * Review hash table construction
 * Binary and n-ary trees
