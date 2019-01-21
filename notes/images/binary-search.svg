@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="209.75 213.18334 229.69167 171.01666" width="229.69167" height="171.01666">
+  <defs>
+    <font-face font-family="Helvetica Neue" font-size="16" panose-1="2 0 5 3 0 0 0 2 0 4" units-per-em="1000" underline-position="-100" underline-thickness="50" slope="0" x-height="517" cap-height="714" ascent="951.9958" descent="-212.99744" font-weight="400">
+      <font-face-src>
+        <font-face-name name="HelveticaNeue"/>
+      </font-face-src>
+    </font-face>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -4 10 8" markerWidth="10" markerHeight="8" color="black">
+      <g>
+        <path d="M 7.6 0 L 0 -2.85 L 0 2.85 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.9.4 
+    <dc:date>2019-01-21 21:10:23 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_1" fill-opacity="1" stroke-dasharray="none" stroke-opacity="1" stroke="none" fill="none">
+    <title>Canvas 1</title>
+    <rect fill="white" x="209.75" y="213.18334" width="229.69167" height="171.01666"/>
+    <g id="Canvas_1: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_48">
+        <rect x="419.74167" y="234.62084" width="10.291667" height="124.87916" fill="#ccc"/>
+      </g>
+      <g id="Graphic_47">
+        <rect x="407.075" y="237.84584" width="10.291667" height="121.65416" fill="#ccc"/>
+      </g>
+      <g id="Graphic_46">
+        <rect x="394.40834" y="242.8625" width="10.291667" height="116.63749" fill="#ccc"/>
+      </g>
+      <g id="Graphic_45">
+        <rect x="381.74167" y="249.3125" width="10.291667" height="110.18749" fill="#ccc"/>
+      </g>
+      <g id="Graphic_44">
+        <rect x="369.075" y="250.74584" width="10.291667" height="108.75416" fill="#ccc"/>
+      </g>
+      <g id="Graphic_43">
+        <rect x="356.40834" y="253.97084" width="10.291667" height="105.52916" fill="#f46c43"/>
+      </g>
+      <g id="Graphic_42">
+        <rect x="343.74167" y="260.0625" width="10.291667" height="99.43749" fill="#ccc"/>
+      </g>
+      <g id="Graphic_41">
+        <rect x="331.075" y="267.94584" width="10.291667" height="91.55416" fill="#ccc"/>
+      </g>
+      <g id="Graphic_40">
+        <rect x="318.40834" y="275.47084" width="10.291667" height="84.02916" fill="#ccc"/>
+      </g>
+      <g id="Graphic_39">
+        <rect x="305.74167" y="278.875" width="10.291667" height="80.625" fill="#ccc"/>
+      </g>
+      <g id="Graphic_38">
+        <rect x="293.075" y="278.875" width="10.291667" height="80.625" fill="#ccc"/>
+      </g>
+      <g id="Graphic_37">
+        <rect x="280.40834" y="286.9375" width="10.291667" height="72.5625" fill="#ccc"/>
+      </g>
+      <g id="Graphic_36">
+        <rect x="267.74167" y="299.47917" width="10.291667" height="60.02083" fill="#ccc"/>
+      </g>
+      <g id="Graphic_35">
+        <rect x="255.075" y="307.54167" width="10.291667" height="51.958333" fill="#ccc"/>
+      </g>
+      <g id="Graphic_34">
+        <rect x="241.61667" y="307.54167" width="10.291667" height="51.958333" fill="#ccc"/>
+      </g>
+      <g id="Graphic_33">
+        <rect x="228.15834" y="315.60417" width="10.291667" height="43.895833" fill="#ccc"/>
+      </g>
+      <g id="Graphic_32">
+        <rect x="214.7" y="325.45833" width="10.291667" height="34.041667" fill="#ccc"/>
+      </g>
+      <g id="Graphic_28">
+        <text transform="translate(214.75 359.976)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".052" y="15">0</tspan>
+        </text>
+      </g>
+      <g id="Graphic_29">
+        <text transform="translate(416.44167 359.976)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".104" y="15">16</tspan>
+        </text>
+      </g>
+      <g id="Graphic_30">
+        <text transform="translate(319.05417 359.976)" fill="black">
+          <tspan font-family="Helvetica Neue" font-size="16" font-weight="400" fill="black" x=".052" y="15">8</tspan>
+        </text>
+      </g>
+      <g id="Line_50">
+        <line x1="323.55417" y1="230.5" x2="323.55417" y2="359.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width=".5"/>
+      </g>
+      <g id="Line_51">
+        <line x1="374.22084" y1="230.5" x2="374.22084" y2="359.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width=".5"/>
+      </g>
+      <g id="Line_52">
+        <line x1="348.8875" y1="230.5" x2="348.8875" y2="359.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,2.0" stroke-width=".5"/>
+      </g>
+      <g id="Line_54">
+        <path d="M 323.55417 227.4375 C 323.55417 227.4375 335.5334 213.1542 349.8875 213.4375 C 359.42234 213.6257 367.0268 220.18244 371.0583 224.56399" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Line_55">
+        <path d="M 374.22084 228.4375 C 374.22084 228.4375 367.48956 221.01254 360.3125 221.4375 C 356.68752 221.65214 353.80978 223.81834 351.8492 225.90997" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Line_56">
+        <path d="M 349.8875 228.4375 C 349.8875 228.4375 356.4341 227.62131 359.8125 232.4375 C 361.43836 234.7553 361.96253 237.85303 362.06884 240.4432" marker-end="url(#FilledArrow_Marker)" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+    </g>
+  </g>
+</svg>
