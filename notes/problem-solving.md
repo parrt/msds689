@@ -46,10 +46,9 @@ For example, computing the median is straightforward for an array sitting on a s
 
 Multiple failed attempts is part of the game because interviewers won't ask trivial problems, except perhaps during an initial phone screen.
 
-
 ## Some advice
 
-* Details matter, pay careful attention to the interviewer.
+* Details matter, pay careful attention to the interviewer. Pretend that they are trying to trick you with the problem description!
 
 * When reading the problem description, identify who is doing what to whom? What are the nouns and verbs used in the description? The nouns are usually data sources or data elements; the verbs are often operations you need to perform. Look for keywords like min, max, average, median, sort, argmax, sum, find, search, collect, etc... Regardless of how you do it, clearly identify:
     1. the source and format of data
@@ -67,4 +66,3 @@ Multiple failed attempts is part of the game because interviewers won't ask triv
     1. emit output
  
 * Make sure you fully understand the constraints.  Are the input data elements strings, ints, floats?  If they are values, are they always between 0 and 1?  Can they be negative? Is the input sorted? Is speed or space an issue? Can you see all of the data at once or do you have to worry about streaming data? Can you bound the maximum size of the input? This might matter if you need to make an nxn matrix for example.
-

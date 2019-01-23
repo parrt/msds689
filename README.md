@@ -37,8 +37,8 @@ By the end of this course, students will be able to:
 
 **TEMPORAL COORDINATES.** Fri Jan 25 - Fri Mar 8, 2019
 
-* Section 01: Mon/Wed 10-11:55AM
-* Section 02: Mon/Wed 2:20-4:15PM 
+* Section 01: Fri 10-11:55AM
+* Section 02: Fri 2:20-4:15PM 
 * Exams: Fri 15 Feb before class 9:15am-9:55, Fri Mar 8 in class 10am for both classes at once (different room likely)
 
 **INSTRUCTION FORMAT**. Class runs for 1:55 hours, 2 days/week. Instructor-student interaction during lecture is encouraged and we'll mix in mini-exercises / labs during class. All programming will be done in the Python 3.6 (not 3.7) programming language, unless otherwise specified.
@@ -70,9 +70,10 @@ Each project has a hard deadline and only those projects working correctly befor
 
 # Syllabus
 
+* [Problem-solving](notes/problem-solving.md)
+* [Getting a grip on recursion](notes/recursion.pdf)
 * [Measuring execution time](notes/execution-time.ipynb)
 * [Introduction to algorithm complexity](notes/complexity.pdf) (“Big-O” notation)
-* [Problem-solving](notes/problem-solving.md)
 * Review hash table construction
 * Binary and n-ary trees
 * Isolation Forests
