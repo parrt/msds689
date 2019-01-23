@@ -70,6 +70,7 @@ Each project has a hard deadline and only those projects working correctly befor
 
 # Syllabus
 
+* Discuss OO htable project, [Operator overloading](notes/ operator-overloading.ipynb)
 * [Problem-solving](notes/problem-solving.md)
 * [Getting a grip on recursion](notes/recursion.pdf)
 * [Measuring execution time](notes/execution-time.ipynb)
