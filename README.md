@@ -57,8 +57,8 @@ If you ever have questions about what constitutes plagiarism, cheating, or acade
 
 | Artifact | Grade Weight | Due date |
 |--------|--------|--------|
-|[OO hashtable](projects/oohtable/oohtable.md)| 10% | Sun, Feb xx 11:59pm |
-|[Isolation Forest](projects/iforest/iforest.md)| 40% | Sun, Mar xx 11:59pm |
+|[OO hashtable](projects/oohtable/oohtable.md)| 10% | Sun, Feb 3 11:59pm |
+|[Isolation Forest](projects/iforest/iforest.md)| 40% | Sun, Mar 3 11:59pm |
 |Exam 1| 20%| 9:15AM-9:55AM Fri Feb 15 |
 |Exam 2| 30%| 10AM-11:00AM Fri Mar 8 |
 
