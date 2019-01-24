@@ -70,7 +70,8 @@ Each project has a hard deadline and only those projects working correctly befor
 
 # Syllabus
 
-* Discuss OO htable project, [Operator overloading](notes/ operator-overloading.ipynb)
+* Discuss OO htable project, review [OO notes](https://github.com/parrt/msds501/blob/master/notes/OO.ipynb)
+* [Operator overloading](notes/operator-overloading.ipynb)
 * [Problem-solving](notes/problem-solving.md)
 * [Getting a grip on recursion](notes/recursion.pdf)
 * [Measuring execution time](notes/execution-time.ipynb)
