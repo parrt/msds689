@@ -70,8 +70,7 @@ Each project has a hard deadline and only those projects working correctly befor
 
 # Syllabus
 
-* Discuss OO htable project, review [OO notes](https://github.com/parrt/msds501/blob/master/notes/OO.ipynb)
-* [Operator overloading](notes/operator-overloading.ipynb)
+* Discuss OO htable project, review [OO notes](https://github.com/parrt/msds501/blob/master/notes/OO.ipynb) and [Operator overloading](notes/operator-overloading.ipynb)
 * [Core data structures](notes/core-data-structures.pdf)
 * [Problem-solving](notes/problem-solving.md) (Do "quiz" called Pairs on Canvas)
 * [Getting a grip on recursion](notes/recursion.pdf)
