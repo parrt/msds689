@@ -72,7 +72,7 @@ Each project has a hard deadline and only those projects working correctly befor
 
 * Discuss OO htable project, review [OO notes](https://github.com/parrt/msds501/blob/master/notes/OO.ipynb) and [Operator overloading](notes/operator-overloading.ipynb)
 * [Problem-solving](notes/problem-solving.md)
-* Do "quiz" called Pairs on Canvas
+* Do "quizzes" called Pairs  and OO programming on Canvas
 * [Core data structures](notes/core-data-structures.pdf)
 * [Getting a grip on recursion](notes/recursion.pdf)
 * [Measuring execution time](notes/execution-time.ipynb)
