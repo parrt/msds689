@@ -75,10 +75,9 @@ Each project has a hard deadline and only those projects working correctly befor
 * [Problem-solving](notes/problem-solving.md)
 * Do "quizzes" called Pairs  and OO programming on Canvas
 * [Core data structures](notes/core-data-structures.pdf)
-* [Getting a grip on recursion](notes/recursion.pdf)
-* [Measuring execution time](notes/execution-time.ipynb)
-* [Introduction to algorithm complexity](notes/complexity.pdf) (“Big-O” notation)
+* [Introduction to algorithm complexity](notes/complexity.pdf) (“Big-O” notation); see [Measuring execution time notebook](notes/execution-time.ipynb)
 * [Anomaly detection with isolation forests](notes/isolation-forests.pdf)
+* [Getting a grip on recursion](notes/recursion.pdf); see [recursion notebook](https://github.com/parrt/msds689/blob/master/notes/recursion-notebook.ipynb)
 * Binary and n-ary trees
 * Searching, sorting, distance metrics (e.g., Levenshtein distance) for arrays and strings
 * Linked lists and common operations, such as insertion and deletion
