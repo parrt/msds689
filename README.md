@@ -71,7 +71,7 @@ Each project has a hard deadline and only those projects working correctly befor
 # Syllabus
 
 * Review hash table construction, discuss OO htable project
-* Review [OO notes](https://github.com/parrt/msds501/blob/master/notes/OO.ipynb) and [Operator overloading](notes/operator-overloading.ipynb)
+* Review [OO notebook](https://github.com/parrt/msds501/blob/master/notes/OO.ipynb) and [Operator overloading notebook](notes/operator-overloading.ipynb)
 * [Problem-solving](notes/problem-solving.md)
 * Do "quizzes" called Pairs  and OO programming on Canvas
 * [Core data structures](notes/core-data-structures.pdf)
@@ -79,6 +79,7 @@ Each project has a hard deadline and only those projects working correctly befor
 * Do complexity practice quiz
 * [Anomaly detection with isolation forests](notes/isolation-forests.pdf)
 * [Getting a grip on recursion](notes/recursion.pdf); see [recursion notebook](https://github.com/parrt/msds689/blob/master/notes/recursion-notebook.ipynb)
+* [Walking data structures](notes/walking-structures.pdf); see [walking notebook](https://github.com/parrt/msds689/blob/master/notes/walking.ipynb)
 * Binary and n-ary trees
 * Searching, sorting, distance metrics (e.g., Levenshtein distance) for arrays and strings
 * Linked lists and common operations, such as insertion and deletion
