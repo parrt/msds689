@@ -80,9 +80,10 @@ Each project has a hard deadline and only those projects working correctly befor
 * [Anomaly detection with isolation forests](notes/isolation-forests.pdf)
 * [Getting a grip on recursion](notes/recursion.pdf); see [recursion notebook](https://github.com/parrt/msds689/blob/master/notes/recursion-notebook.ipynb)
 * [Walking data structures](notes/walking-structures.pdf); see [walking notebook](https://github.com/parrt/msds689/blob/master/notes/walking.ipynb)
-* [Regression tree stumps notebook ](https://github.com/parrt/msds689/blob/master/notes/stumps.ipynb)
-* Searching, sorting, distance metrics (e.g., Levenshtein distance) for arrays and strings
-* Linked lists and common operations, such as insertion and deletion
+* [Regression tree stumps notebook](https://github.com/parrt/msds689/blob/master/notes/stumps.ipynb)
+* [Sorting](notes/sorting.pdf); see [Sorting notebook](https://github.com/parrt/msds689/blob/master/notes/sorting.ipynb)
+* Searching
+* distance metrics (e.g., Levenshtein distance) for arrays and strings
 * Tries for efficient word look up
 * Graphs via adjacency lists and adjacency matrices; shortest path algorithm
 * todo: Topo sort, all combos, merge, find/search, collect/filter
