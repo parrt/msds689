@@ -20,7 +20,7 @@ For this project, we'll use three data sets:
 
 * Get cancer data into `cancer.csv` by executing [savecancer.csv](https://github.com/parrt/msds689/blob/master/projects/iforest/savecancer.py) that I provide.
 
-* [http.csv.zip](https://github.com/parrt/msds689/blob/master/projects/iforest/http.csv.zip); download, unzip to get `http.csv`.
+* [http.zip](https://github.com/parrt/msds689/blob/master/projects/iforest/http.zip); download, unzip to get `http.csv`.
 
 These files are not that large, but a pure Python solution for isolation forest takes too long on the whole file: 2.5 minutes on `creditcard.csv` and 5 minutes on `http.csv`.  (My hybrid python/C solution takes about two seconds. ha!)
 
