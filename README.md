@@ -9,6 +9,8 @@ This course is part of the [MS in Data Science program at the University of San 
 
 # Resources
 
+Here is a great free book on [algorithms by Jeff Erickson](http://jeffe.cs.illinois.edu/teaching/algorithms/).
+
 I'll be pulling some material from Kleinberg and Tardos, *Algorithm Design*. US copyright law allows me to make copies of small portions of books for educational use, which I have done. Please see compressed pdf `kleinberg-common-running-times.7z` in Canvas course files area. (Do not post that material publicly.)
 
 A very useful set of [programming-concepts-for-data-science](https://nbviewer.jupyter.org/github/shik3519/programming-concepts-for-data-science/blob/master/notebooks/03-common%20datastructures%20and%20algorithms.ipynb) by former USF MSDS student [Shikhar Gupta](https://github.com/shik3519).
@@ -82,7 +84,7 @@ Each project has a hard deadline and only those projects working correctly befor
 * [Walking data structures](notes/walking-structures.pdf); see [walking notebook](https://github.com/parrt/msds689/blob/master/notes/walking.ipynb)
 * [Regression tree stumps notebook](https://github.com/parrt/msds689/blob/master/notes/stumps.ipynb)
 * [Sorting](notes/sorting.pdf); see [Sorting notebook](https://github.com/parrt/msds689/blob/master/notes/sorting.ipynb)
-* Searching
+* [Searching](notes/searching.pdf); see [Searching notebook](https://github.com/parrt/msds689/blob/master/notes/searching.ipynb)
 * distance metrics (e.g., Levenshtein distance) for arrays and strings
 * Tries for efficient word look up
 * Graphs via adjacency lists and adjacency matrices; shortest path algorithm
