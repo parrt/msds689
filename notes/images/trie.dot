@@ -1,0 +1,27 @@
+digraph Trie {
+	splines=line;
+	margin=0.0;
+	graph [nodesep=0.45 ranksep=0.25]
+    	node [shape=circle margin="0.03" fixedsize=true penwidth="0.5" radius=0.2 height=.2 label=" "];
+    	edge [arrowsize=.5 penwidth="0.3" fontname="Arial"]
+	root -> na [label="a"]
+	root -> nc [label="c"]
+	root -> nd [label="d"]
+	root -> nz [label="z"]
+
+	na -> np [label="p"]
+	nc -> na2 [label="a"]
+	nc -> ni [label="i"]
+	nd -> no [label="o"]
+	nz -> ne [label="e"]
+
+	np -> ne2 [label="e"]
+	np -> np2 [label="p"]
+	na2 -> nn [label="n"]
+	na2 -> nt [label="t"]
+	ni -> nv [label="v"]
+	no -> ng [label="g"]
+	ne -> nb [label="b"]
+
+}
+
