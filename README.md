@@ -85,8 +85,6 @@ Each project has a hard deadline and only those projects working correctly befor
 * [Regression tree stumps notebook](https://github.com/parrt/msds689/blob/master/notes/stumps.ipynb)
 * [Sorting](notes/sorting.pdf); see [Sorting notebook](https://github.com/parrt/msds689/blob/master/notes/sorting.ipynb)
 * [Searching](notes/searching.pdf); see [Searching notebook](https://github.com/parrt/msds689/blob/master/notes/searching.ipynb)
-* distance metrics (e.g., Levenshtein distance) for arrays and strings
-* Tries for efficient word look up
 * Graphs via adjacency lists and adjacency matrices; shortest path algorithm
 * todo: Topo sort, all combos, merge, find/search, collect/filter
 
