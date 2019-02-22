@@ -63,7 +63,7 @@ def trie_search(words):
 
     print(f"{found} found out of {len(words)}")
     stop = time.time()
-    print(f"TRIE search time {stop-start:.2f}s")  # wow: 265.85s (4.43 minutes)
+    print(f"TRIE search time {stop-start:.2f}s")
 
 
 def load():
