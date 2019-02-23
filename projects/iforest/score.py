@@ -105,7 +105,7 @@ def score_cancer():
           reqd_fit_time=1.5,
           reqd_score_time=2.4,
           reqd_FPR=.4,
-          reqd_n_nodes=109000 if noise and improved else 130_000)
+          reqd_n_nodes=8500)
 
 
 def add_noise(df):
