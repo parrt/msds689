@@ -6,12 +6,12 @@ import time
 
 from iforest import IsolationTreeEnsemble, find_TPR_threshold
 
-def score(X, y, n_trees, desired_TPR, datafile,
+def score(X, y, n_trees, desired_TPR, datafile,sample_size,
           reqd_fit_time,
           reqd_score_time,
           reqd_FPR,
           reqd_n_nodes):
-    it = IsolationTreeEnsemble(sample_size=256, n_trees=n_trees)
+    it = IsolationTreeEnsemble(sample_size=sample_size, n_trees=n_trees)
 
     fit_start = time.time()
     it.fit(X, improved=improved)
@@ -54,7 +54,7 @@ def score(X, y, n_trees, desired_TPR, datafile,
         errors += 1
 
     if n_nodes > reqd_n_nodes*1.15:
-        print(f"FAIL {datafile} n_nodes {n_nodes} > {reqd_n_nodes} +- 20%")
+        print(f"FAIL {datafile} n_nodes {n_nodes} > {reqd_n_nodes} +- 15%")
         errors += 1
 
     if errors==0:
@@ -71,7 +71,7 @@ def score_cc():
     X, y = df.drop('Class', axis=1), df['Class']
 
     score(X, y, n_trees=200, desired_TPR=.8,
-          datafile='creditcard.csv',
+          datafile='creditcard.csv',sample_size=256,
           reqd_fit_time=.32 if noise and improved else 0.25,
           reqd_score_time=13,
           reqd_FPR=.08,
@@ -86,10 +86,10 @@ def score_http():
     X, y = df.drop('attack', axis=1), df['attack']
 
     score(X, y, n_trees=300, desired_TPR=.99,
-          datafile='http.csv',
+          datafile='http.csv',sample_size=256,
           reqd_fit_time=.37 if noise and improved else 0.2,
           reqd_score_time=21 if noise and improved else 13,
-          reqd_FPR=.17 if noise and improved else 0.006,
+          reqd_FPR=.22 if noise and improved else 0.006,
           reqd_n_nodes=26300 if noise and improved else 22700)
 
 
@@ -100,11 +100,11 @@ def score_cancer():
     if noise: add_noise(df)
     X, y = df.drop('diagnosis', axis=1), df['diagnosis']
 
-    score(X, y, n_trees=1000, desired_TPR=.75,
+    score(X, y, n_trees=1000, desired_TPR=.75,sample_size=5,
           datafile='cancer.csv',
-          reqd_fit_time=1.5,
-          reqd_score_time=2.4,
-          reqd_FPR=.4,
+          reqd_fit_time=0.09,
+          reqd_score_time=.75,
+          reqd_FPR=.33,
           reqd_n_nodes=8500)
 
 
