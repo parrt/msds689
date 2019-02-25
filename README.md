@@ -85,8 +85,7 @@ Each project has a hard deadline and only those projects working correctly befor
 * [Regression tree stumps notebook](https://github.com/parrt/msds689/blob/master/notes/stumps.ipynb)
 * [Sorting](notes/sorting.pdf); see [Sorting notebook](https://github.com/parrt/msds689/blob/master/notes/sorting.ipynb)
 * [Searching](notes/searching.pdf); see [Searching notebook](https://github.com/parrt/msds689/blob/master/notes/searching.ipynb)
-* Graphs via adjacency lists and adjacency matrices; shortest path algorithm
-* todo: Topo sort, all combos, merge, find/search, collect/filter
+* [Graphs](notes/graphs.pdf); see [Graphs notebook](https://github.com/parrt/msds689/blob/master/notes/graphs.ipynb)
 
 The use of recursive algorithms will be emphasized frequently and wherever appropriate to reinforce this critical mechanism. Discussion of formal algorithm complexity will also be emphasized throughout the lectures.
 
