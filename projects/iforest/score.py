@@ -70,12 +70,12 @@ def score_cc():
     if noise: add_noise(df)
     X, y = df.drop('Class', axis=1), df['Class']
 
-    score(X, y, n_trees=200, desired_TPR=.8,
+    score(X, y, n_trees=300, desired_TPR=.8,
           datafile='creditcard.csv',sample_size=256,
           reqd_fit_time=.32 if noise and improved else 0.25,
           reqd_score_time=13,
-          reqd_FPR=.08,
-          reqd_n_nodes=15800 if noise and improved else 18900)
+          reqd_FPR=.15 if noise and improved else .08,
+          reqd_n_nodes=24000 if noise and improved else 27176)
 
 
 def score_http():
