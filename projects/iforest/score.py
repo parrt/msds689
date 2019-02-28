@@ -102,7 +102,7 @@ def score_cancer():
 
     score(X, y, n_trees=1000, desired_TPR=.75,sample_size=5,
           datafile='cancer.csv',
-          reqd_fit_time=0.09,
+          reqd_fit_time=0.2,
           reqd_score_time=.75,
           reqd_FPR=.33,
           reqd_n_nodes=8500)
