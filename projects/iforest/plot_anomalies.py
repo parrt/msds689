@@ -77,7 +77,7 @@ if __name__ == '__main__': # dask seems to need this
     # or, "python plot_anomalies.py cancer.csv diagnosis all 5 1000 80
     datafile = sys.argv[1]
     targetcol = sys.argv[2]
-    sample_size = int(sys.argv[5])
+    sample_size = int(sys.argv[4])
     n_trees = int(sys.argv[5])
     desired_TPR = int(sys.argv[6])
     desired_TPR /= 100.0
