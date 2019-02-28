@@ -72,8 +72,8 @@ def score_cc():
 
     score(X, y, n_trees=300, desired_TPR=.8,
           datafile='creditcard.csv',sample_size=256,
-          reqd_fit_time=.32 if noise and improved else 0.25,
-          reqd_score_time=13,
+          reqd_fit_time=.45 if noise and improved else 0.4,
+          reqd_score_time=20,
           reqd_FPR=.15 if noise and improved else .08,
           reqd_n_nodes=24000 if noise and improved else 27176)
 
