@@ -1,7 +1,5 @@
-MSDS689 Problem Solving with Python
+MSDS689 Data Structures and Algorithms
 =======
-
-(*Proposed to be MSDS695 Data Structures and Algorithms year 2020*)
 
 This course give students a deeper and more general view of data structures and algorithms. While students have examined a number of data structures, such as binary trees, already, this course provides a much more in-depth study. This depth will benefit them greatly in the advanced machine learning course. This course also tends to address many of the difficult algorithm questions students get during job interviews. The critical data structures covered in this class are: lists, linked lists, trees, graphs, hash tables, and tries. The course also covers a variety of common and useful recursive and non-recursive algorithms, such as searching and sorting.
 
@@ -41,7 +39,7 @@ By the end of this course, students will be able to:
 
 * Section 01: Fri 10-11:55AM
 * Section 02: Fri 2:20-4:15PM 
-* Exams: Fri 15 Feb before class 9:15am-9:55, Fri Mar 8 in class 10am for both classes at once (different room likely)
+* Exams: Fri 7 Feb after class xxx, Fri Mar 6 in class 10am for both classes at once
 
 **INSTRUCTION FORMAT**. Class runs for 1:55 hours, 2 days/week. Instructor-student interaction during lecture is encouraged and we'll mix in mini-exercises / labs during class. All programming will be done in the Python 3.6 (not 3.7) programming language, unless otherwise specified.
 
@@ -60,9 +58,9 @@ If you ever have questions about what constitutes plagiarism, cheating, or acade
 | Artifact | Grade Weight | Due date |
 |--------|--------|--------|
 |[OO hashtable](projects/oohtable/oohtable.md)| 10% | Sun, Feb 3 11:59pm |
-|[Isolation Forest](projects/iforest/iforest.md)| 40% | Sun, Mar 3 11:59pm |
-|Exam 1| 20%| 9:15AM-9:55AM Fri Feb 15 |
-|Exam 2| 30%| 10AM-11:00AM Fri Mar 8 |
+|[Clustering](projects/clustering/clustering.md)| 40% | Sun, Mar 3 11:59pm |
+|Exam 1| 20%| 3:15PM-4:15PM Thur Feb 13 |
+|Exam 2| 30%| 10AM-11:00AM Fri Mar 6 |
 
 All projects will be graded with the specific input or tests given in the project description, so you understand precisely what is expected of your program. Consequently, projects will be graded in binary fashion: They either work or they do not. The only exception is when your program does not run on the grader's or my machine because of some cross-platform issue. This is typically because a student has hardcoded some file name or directory into their program. In that case, we will take off *a minimum* of 10% instead of giving you a 0, depending on the severity of the mistake. Please go to github and verify that the website has the proper files for your solution. That is what I will download for testing.
 

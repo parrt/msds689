@@ -63,6 +63,8 @@ To get a list of the keyvalue pairs as tuples like `[('the', 9), ('and', 9), ...
 
 As with a built-in dictionary from Python, converting something to string using `str(table)` or just `print(table)` should also work. That means you have to implement the `__str__` method to print out the key:value pairs. We also had a method that dumped out all the buckets for debugging purposes called `htable_buckets_str()`.  Instead, we use `__repr__` with the class definition to print out a representation of that object.
 
+**You must support any object as key, not just strings and integers** like in MSDS692. Use the built in `hash(o)` function to get hashcodes for other kinds of objects.
+
 Here are all of the methods that you must implement in the class definition:
 
 <img src="images/oohtable-methods.png" width="220">
@@ -71,15 +73,17 @@ Of course you can implement other methods, but those are the ones used by the te
 
 Please note that you cannot have any global variables, variable sitting outside of your class or method definitions. You can only have local variables, parameters of functions, and fields of the `HashTable` class.
 
-Your `oohtable.py` file also should not have code that gets executed when other files import `oohtable.py`.
+Your `oohtable.py` file also should not have code that gets executed when other files import `oohtable.py`.  
 
 The tests described in the next section should execute very quickly, as in less than a second.
 
 ## Evaluation
 
-To evaluate your projects, we will run the unit tests.  The unit tests I have provided for you test all of the functions described above. Because they all use the index notation, `table[key]`, you should get `__setitem__` and `__getitem__` working first.
+To evaluate your projects, we will run the unit tests.  The unit tests I have provided for you test all of the functions described above, except for the "keys can be any kind of object" part. Because they all use the index notation, `table[key]`, you should get `__setitem__` and `__getitem__` working first.
 
-We will grade in a binary fashion (works or doesn't) because you have all of the known tests.
+I have created a small hidden test for your hashtable.  Make sure you test performance is O(1) even on big hashtables.
+
+We will grade in a binary fashion (works or doesn't) because you have most of the known tests.  Each failed test costs you 5%. Each failed hidden test costs you 3%.
 
 Please make a copy of [test_oohtable.py](test_oohtable.py) in the same directory as your `oohtable.py` file and then run your tests either from your development environment or the command line. Ultimately, you want the test results to look like the following:
 
@@ -91,27 +95,26 @@ cachedir: .pytest_cache
 rootdir: /Users/parrt/courses/msds689-private/projects/oohtable, inifile:
 plugins: remotedata-0.3.0, openfiles-0.3.0, doctestplus-0.1.3, arraydiff-0.2
 collected 18 items                                                                                   
+test_oohtable.py::test_empty PASSED                                      [  5%]
+test_oohtable.py::test_single PASSED                                     [ 11%]
+test_oohtable.py::test_get0 PASSED                                       [ 16%]
+test_oohtable.py::test_get PASSED                                        [ 22%]
+test_oohtable.py::test_singleton PASSED                                  [ 27%]
+test_oohtable.py::test_int_to_int PASSED                                 [ 33%]
+test_oohtable.py::test_str_to_str PASSED                                 [ 38%]
+test_oohtable.py::test_str_to_list PASSED                                [ 44%]
+test_oohtable.py::test_replace_str PASSED                                [ 50%]
+test_oohtable.py::test_len0 PASSED                                       [ 55%]
+test_oohtable.py::test_len PASSED                                        [ 61%]
+test_oohtable.py::test_items0 PASSED                                     [ 66%]
+test_oohtable.py::test_items PASSED                                      [ 72%]
+test_oohtable.py::test_iter0 PASSED                                      [ 77%]
+test_oohtable.py::test_iter PASSED                                       [ 83%]
+test_oohtable.py::test_keys0 PASSED                                      [ 88%]
+test_oohtable.py::test_keys PASSED                                       [ 94%]
+test_oohtable.py::test_wordfreq PASSED                                   [100%]
 
-test_oohtable.py::test_empty PASSED                                                            [  5%]
-test_oohtable.py::test_single PASSED                                                           [ 11%]
-test_oohtable.py::test_get0 PASSED                                                             [ 16%]
-test_oohtable.py::test_get PASSED                                                              [ 22%]
-test_oohtable.py::test_singleton PASSED                                                        [ 27%]
-test_oohtable.py::test_int_to_int PASSED                                                       [ 33%]
-test_oohtable.py::test_str_to_str PASSED                                                       [ 38%]
-test_oohtable.py::test_str_to_list PASSED                                                      [ 44%]
-test_oohtable.py::test_replace_str PASSED                                                      [ 50%]
-test_oohtable.py::test_len0 PASSED                                                             [ 55%]
-test_oohtable.py::test_len PASSED                                                              [ 61%]
-test_oohtable.py::test_items0 PASSED                                                           [ 66%]
-test_oohtable.py::test_items PASSED                                                            [ 72%]
-test_oohtable.py::test_iter0 PASSED                                                            [ 77%]
-test_oohtable.py::test_iter PASSED                                                             [ 83%]
-test_oohtable.py::test_keys0 PASSED                                                            [ 88%]
-test_oohtable.py::test_keys PASSED                                                             [ 94%]
-test_oohtable.py::test_wordfreq PASSED                                                         [100%]
-
-===================================== 18 passed in 0.08 seconds ======================================
+============================== 18 passed in 0.32s ==============================
 ```
 
 ## Deliverables
@@ -119,5 +122,3 @@ test_oohtable.py::test_wordfreq PASSED                                          
 You must complete and add the following file to the root of your `oohtable-`*userid* repository in the USF-MSDS689 organization.
 
 * `oohtable.py`
-
-
