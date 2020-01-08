@@ -28,7 +28,7 @@ By the end of this course, students will be able to:
 
 # Administrivia
 
-**INSTRUCTOR.** [Terence Parr](http://parrt.cs.usfca.edu). I’m a professor in the computer science and [data science program](https://www.usfca.edu/arts-sciences/graduate-programs/data-science) departments and was founding director of the MS in Analytics program at USF (which became the MS data science program).  Please call me Terence or Professor (the use of “Terry” is a capital offense).
+**INSTRUCTOR.** [Terence Parr](http://parrt.cs.usfca.edu). I’m a professor in the computer science and [data science program](https://www.usfca.edu/arts-sciences/graduate-programs/data-science) departments and was founding director of the MS in Data Science program at USF (which became the MS data science program).  Please call me Terence or Professor (the use of “Terry” is a capital offense).
 
 **SPATIAL COORDINATES:**<br>
 
@@ -39,7 +39,7 @@ By the end of this course, students will be able to:
 
 * Section 01: Fri 10-11:55AM
 * Section 02: Fri 2:20-4:15PM 
-* Exams: Fri 7 Feb after class xxx, Fri Mar 6 in class 10am for both classes at once
+* Exams: Thur Feb 13 3:15-4:15PM, Fri Mar 6 in class 10-11:30am for both classes at once
 
 **INSTRUCTION FORMAT**. Class runs for 1:55 hours, 2 days/week. Instructor-student interaction during lecture is encouraged and we'll mix in mini-exercises / labs during class. All programming will be done in the Python 3.6 (not 3.7) programming language, unless otherwise specified.
 
@@ -58,7 +58,7 @@ If you ever have questions about what constitutes plagiarism, cheating, or acade
 | Artifact | Grade Weight | Due date |
 |--------|--------|--------|
 |[OO hashtable](projects/oohtable/oohtable.md)| 10% | Sun, Feb 3 11:59pm |
-|[Clustering](projects/clustering/clustering.md)| 40% | Sun, Mar 3 11:59pm |
+|[Clustering](projects/clustering/clustering.md)| 20% | Sun, Mar 3 11:59pm |
 |Exam 1| 20%| 3:15PM-4:15PM Thur Feb 13 |
 |Exam 2| 30%| 10AM-11:00AM Fri Mar 6 |
 
