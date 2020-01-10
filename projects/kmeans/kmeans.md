@@ -10,7 +10,7 @@ You will work under `kmeans-`*userid* repo.
 
 First, you must implement the standard kmeans algorithm:
 
-<img src="kmeans.png" width="95%">
+<img src="kmeans.png" width="600">
 
 and put into file `kmeans.py` in root directory of your repo.  You can import that file into your notebook using the following from one of the cells:
 
