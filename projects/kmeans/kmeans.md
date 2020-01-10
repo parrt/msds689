@@ -10,7 +10,7 @@ You will work under `kmeans-`*userid* repo.
 
 First, you must implement the standard kmeans algorithm:
 
-<img src="kmeans.png" width="600">
+<img src="kmeans.png" width="550">
 
 and put into file `kmeans.py` in root directory of your repo.  You can import that file into your notebook using the following from one of the cells:
 
@@ -28,7 +28,7 @@ def kmeans(X:np.ndarray, k:int, centroids=None, tolerance=1e-2):
 
 where `centroids` is an *k* x *p* matrix containing the *k* centroids (vectors are *p* long). The `clusters` return value is a list of length *k* containing lists of observation indexes associated with every cluster. I use the tolerance as a general guideline for comparing previous and next generation centroids. If the norm of the two flattened centroid lists is less than the tolerance, I stop.  By default, `centroids=None` indicates that your algorithm should randomly select *k* unique centroids. Here's a sample run on one dimensional data:
 
-<img src="sample-run.png" width="90%">
+<img src="sample-run.png" width="400">
 
 Your software must also handle more than one dimensional data. For example, on the cancer data set there are *p*=30 features.
 
@@ -42,7 +42,7 @@ The basic idea is to randomly pick the first of *k* centroids. Then, pick next *
 
 Here's a sample run on the cancer data set for me:
 
-<img src="cancer.png" width="80%">
+<img src="cancer.png" width="400">
 
 You will notice that I have generated a confusion matrix but how do we know which centroid is associated with which true label (we don't have the *y* target to work with during clustering)?  What I do is to find the most common prediction in each cluster and then assume that is the prediction, flipping each element in that cluster to the appropriate label. Then, we can compare those results to the known *y*.
 
