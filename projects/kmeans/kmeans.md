@@ -144,3 +144,7 @@ def leaf_samples(rf, X:np.ndarray):
 ## Assessment
 
 I believe I will have help with a grader, but reading your reports will take significantly longer than when I provide you some unit tests. Sorry in advance. Also, given the wide range of reports that you will submit, I will limit myself to one of three grades check minus, check, check plus, corresponding roughly to C, B, A.
+
+You should consider adding more tests. For example I got about .71 accuracy on MNIST loaded via sklearn's `load_digits()` function with straight kmeans++.  Using spectral clustering and a Euclidean distance metric between image vectors, I got about .79 accuracy. Note this is not the real MNIST data set as the vectors are 64 not the full MNIST size.
+
+You should also think about explaining how all of your algorithms work, including how you identify which cluster appoints should be associated with which true labels. Talk about any additions you've done and other tests. Ask yourself what you don't know and what you'd like to learn at the start of this project. Then those are good questions to ask and answer in your report notebook. Try to create something that you will be proud to show potential employers.
