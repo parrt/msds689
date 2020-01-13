@@ -57,9 +57,9 @@ If you ever have questions about what constitutes plagiarism, cheating, or acade
 
 | Artifact | Grade Weight | Due date |
 |--------|--------|--------|
-|[OO hashtable](projects/oohtable/oohtable.md)| 8% | Sun, Feb 3 11:59pm |
-|[Clustering](projects/kmeans/kmeans.md)| 20% | Sun, Mar 3 11:59pm |
-|[Feature selection and importance](projects/featimp/featimp.md)| 22% | Sun, Mar 3 11:59pm |
+|[OO hashtable](projects/oohtable/oohtable.md)| 8% | Fri, Jan 31 11:59pm |
+|[Clustering](projects/kmeans/kmeans.md)| 20% | Sun, Mar 16 11:59pm |
+|[Feature selection and importance](projects/featimp/featimp.md)| 22% | Wed, Mar 4 11:59pm |
 |Exam 1| 20%| 3:15PM-4:15PM Thur Feb 13 |
 |Exam 2| 30%| 10AM-11:00AM Fri Mar 6 |
 
