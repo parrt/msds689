@@ -81,10 +81,8 @@ Each project has a hard deadline and only those projects working correctly befor
 * [Core data structures](notes/core-data-structures.pdf)
 * [Introduction to algorithm complexity](notes/complexity.pdf) (“Big-O” notation); see [Measuring execution time notebook](notes/execution-time.ipynb)
 * Do complexity practice quiz
-* [Anomaly detection with isolation forests](notes/isolation-forests.pdf)
 * [Getting a grip on recursion](notes/recursion.pdf); see [recursion notebook](https://github.com/parrt/msds689/blob/master/notes/recursion-notebook.ipynb)
 * [Walking data structures](notes/walking-structures.pdf); see [walking notebook](https://github.com/parrt/msds689/blob/master/notes/walking.ipynb)
-* [Regression tree stumps notebook](https://github.com/parrt/msds689/blob/master/notes/stumps.ipynb)
 * [Sorting](notes/sorting.pdf); see [Sorting notebook](https://github.com/parrt/msds689/blob/master/notes/sorting.ipynb)
 * [Searching](notes/searching.pdf); see [Searching notebook](https://github.com/parrt/msds689/blob/master/notes/searching.ipynb)
 * [Graphs](notes/graphs.pdf); see [Graphs notebook](https://github.com/parrt/msds689/blob/master/notes/graphs.ipynb)
