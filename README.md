@@ -69,10 +69,13 @@ Each project has a hard deadline and only those projects working correctly befor
 
 **Grading standards**. I consider an **A** grade to be above and beyond what most students have achieved. A **B** grade is an average grade for a student or what you could call "competence" in a business setting. A **C** grade means that you either did not or could not put forth the effort to achieve competence. Below **C** implies you did very little work or had great difficulty with the class compared to other students.
 
+# Review
+
+* Review [OO notebook](https://github.com/parrt/msds501/blob/master/notes/OO.ipynb) and [Operator overloading notebook](notes/operator-overloading.ipynb)
+
 # Syllabus
 
 * Review hash table construction, discuss OO htable project
-* Review [OO notebook](https://github.com/parrt/msds501/blob/master/notes/OO.ipynb) and [Operator overloading notebook](notes/operator-overloading.ipynb)
 * [Problem-solving](notes/problem-solving.md)
 * Do "quizzes" called Pairs  and OO programming on Canvas
 * [Core data structures](notes/core-data-structures.pdf)
