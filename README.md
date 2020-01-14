@@ -77,16 +77,23 @@ Each project has a hard deadline and only those projects working correctly befor
 
 * Review hash table construction, discuss OO htable project
 * [Problem-solving](notes/problem-solving.md)
-  * [Problem-solving exercise](https://github.com/parrt/msds689/blob/master/labs/problem-solving-palindromes.ipynb)
+  * [Problem-solving exercise: LeetCode palindromes](https://github.com/parrt/msds689/blob/master/labs/problem-solving-palindromes.ipynb)
   * [Practice Quiz: OO programming](https://github.com/parrt/msds689/blob/master/labs/quiz-oo.ipynb)
 * [Core data structures](notes/core-data-structures.pdf)
-* [Introduction to algorithm complexity](notes/complexity.pdf) (“Big-O” notation); see [Measuring execution time notebook](notes/execution-time.ipynb)
-* Do complexity practice quiz
-* [Getting a grip on recursion](notes/recursion.pdf); see [recursion notebook](https://github.com/parrt/msds689/blob/master/notes/recursion-notebook.ipynb)
-* [Walking data structures](notes/walking-structures.pdf); see [walking notebook](https://github.com/parrt/msds689/blob/master/notes/walking.ipynb)
-* [Sorting](notes/sorting.pdf); see [Sorting notebook](https://github.com/parrt/msds689/blob/master/notes/sorting.ipynb)
-* [Searching](notes/searching.pdf); see [Searching notebook](https://github.com/parrt/msds689/blob/master/notes/searching.ipynb)
-* [Graphs](notes/graphs.pdf); see [Graphs notebook](https://github.com/parrt/msds689/blob/master/notes/graphs.ipynb)
+  * [Problem-solving exercise: LeetCode Merge two sorted linked lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+* [Introduction to algorithm complexity](notes/complexity.pdf) (“Big-O” notation)
+  * [Measuring execution time notebook](notes/execution-time.ipynb)
+  * [Practice Quiz: complexity](https://github.com/parrt/msds689/blob/master/labs/quiz-complexity.ipynb)
+* [Getting a grip on recursion](notes/recursion.pdf)
+  * [recursion notebook](https://github.com/parrt/msds689/blob/master/notes/recursion-notebook.ipynb)
+* [Walking data structures](notes/walking-structures.pdf)
+  * [walking notebook](https://github.com/parrt/msds689/blob/master/notes/walking.ipynb)
+* [Sorting](notes/sorting.pdf)
+  * [Sorting notebook](https://github.com/parrt/msds689/blob/master/notes/sorting.ipynb)
+* [Searching](notes/searching.pdf)
+  * [Searching notebook](https://github.com/parrt/msds689/blob/master/notes/searching.ipynb)
+* [Graphs](notes/graphs.pdf)
+  * [Graphs notebook](https://github.com/parrt/msds689/blob/master/notes/graphs.ipynb)
 
 The use of recursive algorithms will be emphasized frequently and wherever appropriate to reinforce this critical mechanism. Discussion of formal algorithm complexity will also be emphasized throughout the lectures.
 
