@@ -77,7 +77,8 @@ Each project has a hard deadline and only those projects working correctly befor
 
 * Review hash table construction, discuss OO htable project
 * [Problem-solving](notes/problem-solving.md)
-* Do "quizzes" called Pairs  and OO programming on Canvas
+  * [Problem-solving exercise](https://github.com/parrt/msds689/blob/master/labs/problem-solving-palindromes.ipynb)
+  * [Practice Quiz: OO programming](https://github.com/parrt/msds689/blob/master/labs/quiz-oo.ipynb)
 * [Core data structures](notes/core-data-structures.pdf)
 * [Introduction to algorithm complexity](notes/complexity.pdf) (“Big-O” notation); see [Measuring execution time notebook](notes/execution-time.ipynb)
 * Do complexity practice quiz
