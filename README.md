@@ -11,7 +11,7 @@ Here is a great free book on [algorithms by Jeff Erickson](http://jeffe.cs.illin
 
 I'll be pulling some material from Kleinberg and Tardos, *Algorithm Design*. US copyright law allows me to make copies of small portions of books for educational use, which I have done. Please see compressed pdf `kleinberg-common-running-times.7z` in Canvas course files area. (Do not post that material publicly.)
 
-A very useful set of [programming-concepts-for-data-science](https://nbviewer.jupyter.org/github/shik3519/programming-concepts-for-data-science/blob/master/notebooks/03-common%20datastructures%20and%20algorithms.ipynb) by former USF MSDS student [Shikhar Gupta](https://github.com/shik3519).
+A very useful set of [programming-concepts-for-data-science](https://github.com/shik3519/programming-concepts-for-data-science/blob/master/notebooks/03-common%20datastructures%20and%20algorithms.ipynb) and [data science coding questions](https://github.com/shik3519/programming-concepts-for-data-science/blob/master/notebooks/04-coding%20questions%20for%20DS%20interview.ipynb) by former USF MSDS student [Shikhar Gupta](https://github.com/shik3519).
 
 [10 Steps to Solving a Programming Problem](https://codeburst.io/10-steps-to-solving-a-programming-problem-8a32d1e96d74)
 
