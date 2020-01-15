@@ -16,7 +16,7 @@ Here's a good summary of the process I follow when solving a small programming p
 
 ## Second, SOLVE <img align="right" src="images/solve-icon.png" width="55">
 
-Solving the problem has nothing to do with the computer; you might not even be asked to code the solution. If you can't walk through a correct sequence of operations by hand on paper, no amount of coding skill will help you. 
+Solving the problem has nothing to do with the computer; you might not even be asked to code the solution. If you can't walk through a correct sequence of operations by hand on paper, no amount of coding skill will help you. (More on this at the bottom of these notes.)
 
 1. **Explore**. Look at the input-output example and imagine how you can manually operate on the input to get the output. Attempt any manual sequence of operations that appears to be in the right direction, even if you know it's not quite right. Exploration helps you understand the problem and will trigger more questions, so ask questions.
 
@@ -66,3 +66,19 @@ Multiple failed attempts is part of the game because interviewers won't ask triv
     1. emit output
  
 * Make sure you fully understand the constraints.  Are the input data elements strings, ints, floats?  If they are values, are they always between 0 and 1?  Can they be negative? Is the input sorted? Is speed or space an issue? Can you see all of the data at once or do you have to worry about streaming data? Can you bound the maximum size of the input? This might matter if you need to make an nxn matrix for example.
+
+
+## More on problem-solving
+
+When first learning to program, it helps to use established patterns, templates, strategies, and common data transformation operations as a crutch. There are two strategies or general guidelines you can use to approach the program design process:
+
+* *Start with the end result and work your way backwards*, asking what the prerequisites are for each step. In other words, the processing step or steps preceding step i compute the data or values needed by step i. For example, we cannot print the average of some numbers before we compute that average. We can't compute the average until we sum those numbers. We can't sum until we load those numbers into memory etc...
+* *Reduce or simplify a new problem to a variation of an existing problem with a known solution*. To apply this new approach, ask what the difference is between the problem you're trying to solve and other problems for which you have a solution.
+
+Both techniques are well known in architecture, engineering, and mathematics. For example, imagine you want to erect a heavy statue 10 feet off the ground. A structural engineer might decide that the heavy statute needs a flat metal base directly underneath it. Then, to support all of that weight, four 10 foot steel beams should support the metal base. The beams should have deep concrete footings in the ground, and so on. That's working backwards from the end result.
+
+As an example of reuse, engineers building a new suspension bridge do not proceed as if such a thing has never been built before. It's likely they will take an existing design and tweak it to suit the new situation.
+
+As an aside, plan reuse is often used to poke fun at other disciplines. For example, from a collection of physicist jokes, here is a one variation:
+
+ > A Physicist and a mathematician are sitting in a faculty lounge. Suddenly, the coffee machine catches on fire. The physicist grabs a bucket and leap towards the sink, fills the bucket with water and puts out the fire. Second day, the same two sit in the same lounge. Again, the coffee machine catches on fire. This time, the mathematician stands up, gets a bucket, hands the bucket to the physicist, thus reducing the problem to a previously solved one.
