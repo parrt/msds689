@@ -87,6 +87,8 @@ Each project has a hard deadline and only those projects working correctly befor
 * [Getting a grip on recursion](notes/recursion.pdf)
   * [recursion notebook](https://github.com/parrt/msds689/blob/master/notes/recursion-notebook.ipynb)
   * [Problem-solving exercise: LeetCode Reverse linked list recursively](https://leetcode.com/explore/learn/card/recursion-i/251/scenario-i-recurrence-relation/2378/)
+  * [Problem-solving exercise: LeetCode Maximum Depth of Binary Tree
+Solution](https://leetcode.com/explore/learn/card/recursion-i/256/complexity-analysis/2375/)
 * [Walking data structures](notes/walking-structures.pdf)
   * [walking notebook](https://github.com/parrt/msds689/blob/master/notes/walking.ipynb)
 * [Sorting](notes/sorting.pdf)

@@ -9,6 +9,10 @@ As you work on this project, working from your previous codebase, I encourage yo
 * Would you use different variable names now?
 * Could you improve your code, given your enhanced experience?
 
+ To make things more interesting, I have provided everyone with a common `htable.py` to start with (rename it to `oohtable.py`); please see the files area on Canvas. This will give you an opportunity to read somebody else's code from a few years ago. It's more or less okay but not very pretty. You are free to improve the code quality as you add features and convert it to an object-oriented version in this project. Learning to read and modify somebody else's code is a critical skill to gain in order to be productive at work.
+
+ Check out these [OO review notes](https://github.com/parrt/msds501/blob/master/notes/OO.ipynb) and this [practice quiz for OO](https://github.com/parrt/msds689/blob/master/labs/quiz-oo.ipynb).
+
 ## Discussion and requirements
 
 Using the hash table you created in MSDS692 was a bit awkward. For example, here is how we created a hash table with 5 buckets and stored 99 at the key `parrt`:
@@ -81,7 +85,7 @@ The tests described in the next section should execute very quickly, as in less 
 
 To evaluate your projects, we will run the unit tests.  The unit tests I have provided for you test all of the functions described above, except for the "keys can be any kind of object" part. Because they all use the index notation, `table[key]`, you should get `__setitem__` and `__getitem__` working first.
 
-I have created a small hidden test for your hashtable.  Make sure you test performance is O(1) even on big hashtables.
+I have created a small hidden test for your hashtable.  Make sure your test performance is O(1) even on big hashtables.
 
 We will grade in a binary fashion (works or doesn't) because you have most of the known tests.  Each failed test costs you 5%. Each failed hidden test costs you 3%.
 

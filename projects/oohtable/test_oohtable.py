@@ -167,9 +167,9 @@ def test_keys():
     table = HashTable(5)
     table["a"] = "x"
     table["b"] = "y"
-    table[100] = ['tom','mary']
+    table['z'] = ['tom','mary']
     table["parrt"] = {99}
-    assert table.keys()==[100, 'a', 'b', 'parrt']
+    assert sorted(table.keys())==['a', 'b', 'parrt', 'z']
 
 
 def test_wordfreq():
