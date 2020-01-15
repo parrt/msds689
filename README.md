@@ -82,6 +82,7 @@ Each project has a hard deadline and only those projects working correctly befor
 * [Problem-solving](notes/problem-solving.md)
   * [Problem-solving exercise: LeetCode palindromes](https://github.com/parrt/msds689/blob/master/labs/problem-solving-palindromes.ipynb)
   * [Practice Quiz: OO programming](https://github.com/parrt/msds689/blob/master/labs/quiz-oo.ipynb)
+  * [Practice reading code snippets](https://github.com/parrt/msds501/blob/master/notes/reading-code.md)
 * [Core data structures](notes/core-data-structures.pdf)
   * [Problem-solving exercise: LeetCode Merge two sorted linked lists](https://leetcode.com/problems/merge-two-sorted-lists/)
 * [Introduction to algorithm complexity](notes/complexity.pdf) (“Big-O” notation)
