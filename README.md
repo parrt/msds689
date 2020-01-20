@@ -75,11 +75,12 @@ Each project has a hard deadline and only those projects working correctly befor
 
 # Syllabus
 
+* [Welcome!](notes/welcome.pdf)
 * Hashtable
   * Review [hash table construction from MSDS692 project](https://github.com/parrt/msds692/blob/master/hw/search.md#creating-an-index-using-your-own-hashtable)
   * discuss [OO htable project](https://github.com/parrt/msds689/blob/master/projects/oohtable/oohtable.md)
   * code refactoring on-the-fly for whole MSDS692 search project
-* [Problem-solving](notes/problem-solving.md)
+* [Problem-solving](notes/problem-solving.pdf)
   * [Problem-solving exercise: LeetCode palindromes](https://github.com/parrt/msds689/blob/master/labs/problem-solving-palindromes.ipynb)
   * [Practice Quiz: OO programming](https://github.com/parrt/msds689/blob/master/labs/quiz-oo.ipynb)
   * [Practice reading code snippets](https://github.com/parrt/msds501/blob/master/notes/reading-code.md)
