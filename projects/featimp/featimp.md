@@ -74,7 +74,7 @@ Make sure to normalize your future importances to the same range so that the var
 
 It's also useful to get p-values to know whether a feature's importance is significant. To do that, we need a null distribution for comparison purposes. In other words, how likely is a feature to give the real feature importance by accident or randomly?   The idea is to shuffle the target variable y, and then compute the feature importances again.   Count how many times a feature is as important or more important than the true future importance computed as a baseline. If that percentage gets above say 5%, then that feature importance is not significant. I had to run the simulations about 80 times before I started getting reasonable results. This will take a while. ;)  As a starting point, you can check out this [kaggle notebook on null distributions](https://www.kaggle.com/ogrellier/feature-selection-with-null-importances). Here is one of his visualizations of a feature that is significant and one that is not:
 
-<img src="https://www.kaggleusercontent.com/kf/4065111/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..Sk91erp8Tcn7Eiy5owK4TQ.FyVfwMnCKt7FzSh0bzhaj6guPY_4BA5xW2mwqiWzb25Y8eBBXkaWvRGilIorKu0c9mC5UIH897rx3ZTqoZ68045PDR6iU9SbcZHfPA9qNRXKbTObmC5aaKpMWUzii6ZMCViPM-Oo5ORYoV2gGK4O9zhr5AiKxgiR-VvE9DFmtAY.aX5uY4Sy7rbhzAWgD4cxmg/__results___files/__results___15_0.png" width="430">
+<img src="null-distribution.png" width="400">
 
 ## Deliverables
 
