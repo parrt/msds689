@@ -79,11 +79,11 @@ Each project has a hard deadline and only those projects working correctly befor
 * Hashtable
   * Review [hash table construction from MSDS692 project](https://github.com/parrt/msds692/blob/master/hw/search.md#creating-an-index-using-your-own-hashtable)
   * discuss [OO htable project](https://github.com/parrt/msds689/blob/master/projects/oohtable/oohtable.md)
+* [How to read code](notes/reading-code.pdf)
   * code refactoring on-the-fly for whole MSDS692 search project
 * [Problem-solving](notes/problem-solving.pdf)
   * [Problem-solving exercise: LeetCode palindromes](https://github.com/parrt/msds689/blob/master/labs/problem-solving-palindromes.ipynb)
   * [Practice Quiz: OO programming](https://github.com/parrt/msds689/blob/master/labs/quiz-oo.ipynb)
-* [How to read code](notes/reading-code.pdf)
 * [Core data structures](notes/core-data-structures.pdf)
   * [Problem-solving exercise: LeetCode Merge two sorted linked lists](https://leetcode.com/problems/merge-two-sorted-lists/)
 * [Introduction to algorithm complexity](notes/complexity.pdf) (“Big-O” notation)
