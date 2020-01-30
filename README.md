@@ -75,18 +75,19 @@ Each project has a hard deadline and only those projects working correctly befor
 
 # Syllabus
 
-* [Welcome!](notes/welcome.pdf)
+* [Welcome!](notes/welcome.pdf) (Day 1)
 * Hashtable
   * Review [hash table construction from MSDS692 project](https://github.com/parrt/msds692/blob/master/hw/search.md#creating-an-index-using-your-own-hashtable)
   * discuss [OO htable project](https://github.com/parrt/msds689/blob/master/projects/oohtable/oohtable.md)
-* [How to read code](notes/reading-code.pdf)
+* [How to read code](notes/reading-code.pdf) (Day 1)
   * code refactoring on-the-fly for whole MSDS692 search project
-* [Problem-solving](notes/problem-solving.pdf)
+* [Problem-solving](notes/problem-solving.pdf) (Day 1)
   * [Problem-solving exercise: LeetCode palindromes](https://github.com/parrt/msds689/blob/master/labs/problem-solving-palindromes.ipynb)
   * [Practice Quiz: OO programming](https://github.com/parrt/msds689/blob/master/labs/quiz-oo.ipynb)
-* [Core data structures](notes/core-data-structures.pdf)
+* [Core data structures](notes/core-data-structures.pdf) (Day 2)
   * [Problem-solving exercise: LeetCode Merge two sorted linked lists](https://leetcode.com/problems/merge-two-sorted-lists/)
-* [Introduction to algorithm complexity](notes/complexity.pdf) (“Big-O” notation)
+  * [Review binary trees from MSDS621](https://github.com/parrt/msds621/blob/master/labs/trees/binary-trees.ipynb)
+* [Introduction to algorithm complexity](notes/complexity.pdf) (“Big-O” notation)  (Day 2)
   * [Measuring execution time notebook](notes/execution-time.ipynb)
   * [Practice Quiz: complexity](https://github.com/parrt/msds689/blob/master/labs/quiz-complexity.ipynb)
 * [Getting a grip on recursion](notes/recursion.pdf)
