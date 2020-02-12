@@ -87,6 +87,7 @@ Each project has a hard deadline and only those projects working correctly befor
 * [Core data structures](notes/core-data-structures.pdf) (Day 2)
   * [Problem-solving exercise: LeetCode Merge two sorted linked lists](https://leetcode.com/problems/merge-two-sorted-lists/)
   * [Review binary trees from MSDS621](https://github.com/parrt/msds621/blob/master/labs/trees/binary-trees.ipynb)
+  * [Practice Quiz: core data structures](https://github.com/parrt/msds689/blob/master/labs/quiz-core-structures.ipynb)
 * [Introduction to algorithm complexity](notes/complexity.pdf) (“Big-O” notation)  (Day 2)
   * [Measuring execution time notebook](notes/execution-time.ipynb)
   * [Practice Quiz: complexity](https://github.com/parrt/msds689/blob/master/labs/quiz-complexity.ipynb)
