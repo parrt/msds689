@@ -38,9 +38,7 @@ If `centroids='kmeans++'` then your algorithm should use the kmeans++ mechanism 
 
 ## kmeans++
 
-You must find the kmeans++ initial centroid identification algorithm somewhere on the web and implement that in your kmeans.py file.
-
-The basic idea is to randomly pick the first of *k* centroids. Then, pick next *k*-1 points by selecting points that maximize the minimum distance to all existing cluster centroids. So for each point, compute the minimum distance to each cluster.  Among those min distances to clusters for each point, find the max distance. The associated point is the new centroid.
+You must find the kmeans++ initial centroid identification algorithm somewhere on the web and implement that in your kmeans.py file.  Actually those get complicated, estimated joint density etc... Not necessary. The basic idea is just to randomly pick the first of *k* centroids. Then, pick next *k*-1 points by selecting points that maximize the minimum distance to all existing cluster centroids. So for each point, compute the minimum distance to each cluster.  Among those min distances to clusters for each point, find the max distance. The associated point is the new centroid.
 
 Here's a sample run on the cancer data set for me:
 
