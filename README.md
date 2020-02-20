@@ -98,7 +98,6 @@ Each project has a hard deadline and only those projects working correctly befor
 Solution](https://leetcode.com/explore/learn/card/recursion-i/256/complexity-analysis/2375/)
 * [Walking data structures](notes/walking-structures.pdf) (Day 4)
   * [walking notebook](https://github.com/parrt/msds689/blob/master/notes/walking.ipynb)
-  * Walking data structures often involves backtracking so try [Problem-solving exercise: LeetCode backtracking](https://leetcode.com/explore/interview/card/top-interview-questions-medium/109/backtracking/795/)
 * [Sorting](notes/sorting.pdf) (Day 4)
   * [Sorting notebook](https://github.com/parrt/msds689/blob/master/notes/sorting.ipynb)
 * [Searching](notes/searching.pdf) (Day 5)
@@ -106,6 +105,7 @@ Solution](https://leetcode.com/explore/learn/card/recursion-i/256/complexity-ana
   * Instead of LeetCode, implement the TRIE search found mentioned in slides
 * [Graphs](notes/graphs.pdf) (Day 5, 6)
   * [Graphs notebook](https://github.com/parrt/msds689/blob/master/notes/graphs.ipynb)
+  * [Problem-solving exercise: LeetCode backtracking](https://leetcode.com/explore/interview/card/top-interview-questions-medium/109/backtracking/795/) (Walking graphs often involves backtracking)
 
 The use of recursive algorithms will be emphasized frequently and wherever appropriate to reinforce this critical mechanism. Discussion of formal algorithm complexity will also be emphasized throughout the lectures.
 
