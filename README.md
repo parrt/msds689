@@ -100,9 +100,9 @@ Solution](https://leetcode.com/explore/learn/card/recursion-i/256/complexity-ana
   * [walking notebook](https://github.com/parrt/msds689/blob/master/notes/walking.ipynb)
 * [Sorting](notes/sorting.pdf) (Day 4)
   * [Sorting notebook](https://github.com/parrt/msds689/blob/master/notes/sorting.ipynb)
-* [Searching](notes/searching.pdf)
+* [Searching](notes/searching.pdf) (Day 5)
   * [Searching notebook](https://github.com/parrt/msds689/blob/master/notes/searching.ipynb)
-* [Graphs](notes/graphs.pdf)
+* [Graphs](notes/graphs.pdf) (Day 5, 6)
   * [Graphs notebook](https://github.com/parrt/msds689/blob/master/notes/graphs.ipynb)
 
 The use of recursive algorithms will be emphasized frequently and wherever appropriate to reinforce this critical mechanism. Discussion of formal algorithm complexity will also be emphasized throughout the lectures.
