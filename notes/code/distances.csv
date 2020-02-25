@@ -1,0 +1,194 @@
+to,distance
+Daly City,6
+Oakland,8
+Berkeley,10
+San Rafael,15
+Hayward,20
+Walnut Creek,21
+Vallejo,24
+Novato,24
+San Ramon,24
+Concord,25
+Palo Alto,27
+Fremont,28
+Pleasanton,31
+Mountain View,33
+Petaluma,33
+Sunnyvale,35
+Sonoma,35
+Livermore,36
+Napa,36
+Antioch,37
+Cupertino,38
+Santa Clara,39
+San Jose,42
+Santa Rosa,48
+Tracy,54
+Santa Cruz,60
+Stockton,63
+Davis,64
+Manteca,66
+Watsonville,70
+Woodland,71
+Sacramento,75
+Modesto,79
+Arden-Arcade,81
+Hollister,85
+Monterey,86
+Salinas,87
+Turlock,89
+Citrus Heights,89
+Orangevale,90
+Roseville,91
+Lakeport,91
+Yuba City,103
+Ukiah,104
+Atwater,104
+Marysville,104
+Angels Camp,104
+Auburn,106
+Placerville,110
+Firebaugh,125
+Oroville,128
+Fort Bragg,137
+Chico,138
+Paradise,143
+South Lake Tahoe,155
+Fresno,162
+USA Nevada Carson City,173
+Visalia,200
+Bakersfield,251
+Santa Barbara,278
+Oxnard,307
+Simi Valley,316
+Santa Clarita,319
+Thousand Oaks,320
+Hollywood,342
+Glendale,343
+Pasadena,346
+Los Angeles,347
+Inglewood,348
+El Monte,354
+Torrance,355
+Victorville,363
+Long Beach,364
+Pomona,367
+Hesperia,369
+Fullerton,369
+Ontario,370
+Rancho Cucamonga,370
+Anaheim,371
+Orange,376
+Huntington Beach,376
+Santa Ana,378
+Irvine,382
+San Bernardino,383
+Riverside,386
+Moreno Valley,394
+USA Nevada Las Vegas,417
+USA Nevada Paradise,417
+Oceanside,425
+San Diego,458
+Mexico Baja California Tijuana,473
+Oregon Salem,495
+Idaho Boise,518
+Mexico Baja California Mexicali,530
+Oregon Portland,534
+Utah Salt Lake City,601
+Arizona Phoenix,654
+Washington Seattle,679
+Arizona Tucson,755
+Canada British Columbia Vancouver,795
+Montana Helena,807
+Mexico Sonora Hermosillo,891
+New Mexico Albuquerque,897
+Montana Billings,904
+New Mexico Santa Fe,925
+Colorado Denver,949
+Wyoming Cheyenne,967
+Canada Alberta Calgary,1004
+South Dakota Rapid City,1092
+Canada Alberta Edmonton,1169
+Texas Midland,1219
+South Dakota Pierre,1234
+Canada Saskatchewan Regina,1239
+North Dakota Bismarck,1266
+Mexico Sinaloa Mazatlan,1380
+Oklahoma Oklahoma City,1389
+Nebraska Lincoln,1391
+South Dakota Sioux Falls,1402
+Kansas Topeka,1449
+Texas Dallas,1484
+Texas Austin,1502
+Canada Manitoba Winnipeg,1504
+Missouri Kansas City,1507
+Alaska Juneau,1518
+Iowa Des Moines,1551
+Minnesota Minneapolis,1584
+Minnesota St. Paul,1590
+Mexico Aguascalientes Aguascalientes,1624
+Mexico Jalisco Guadalajara,1641
+Texas Houston,1645
+Canada Yukon Whitehorse,1678
+Illinois Chicago,1859
+Mexico Ciudad de México Mexico City,1887
+Louisiana New Orleans,1926
+Indiana Indianapolis,1949
+Alaska Anchorage,2005
+Michigan Detroit,2092
+Canada Nunavut Baker Lake,2131
+Alaska Fairbanks,2135
+Georgia Atlanta,2140
+Canada Northwest Territories Inuvik,2159
+Canada Ontario Toronto,2270
+Alaska Unalaska,2351
+Hawaii Honolulu,2396
+Mexico Quintana Roo Cancún,2410
+Canada Nunavut Coral Harbour,2428
+District of Columbia Washington DC,2441
+Canada Ontario Ottawa,2441
+Belize Belmopan,2481
+Canada Quebec Chibougamau,2494
+Guatemala Guatemala City,2520
+Pennsylvania Philadelphia,2523
+Canada Quebec Montréal,2544
+Cuba Havana,2570
+New York New York,2572
+Florida Miami,2594
+El Salvador San Salvador,2628
+Massachusetts Boston,2699
+Honduras Tegucigalpa,2705
+Canada Nunavut Resolute Bay,2707
+Bahamas Nassau,2774
+Nicaragua Managua,2844
+Russia Anadyr,3029
+Canada Nova Scotia Halifax,3036
+Costa Rica San Jose,3056
+Jamaica Kingston,3068
+Haiti Port-au-Prince,3285
+Kiribati Christmas Island Kiritimati,3318
+Panama Panama,3323
+Greenland Nuuk,3344
+Dominican Republic Santo Domingo,3418
+Canada Newfoundland and Labrador St. John's,3493
+Puerto Rico San Juan,3626
+Colombia Bogota,3802
+Venezuela Caracas,3908
+Peru Lima Lima,4516
+Ireland Dublin,5094
+Japan Tokyo,5151
+United Kingdom England London,5368
+Sweden Stockholm,5371
+Netherlands Amsterdam,5465
+Belgium Brussels Brussels,5531
+France Île-de-France Paris,5577
+South Korea Seoul,5623
+Germany Berlin Berlin,5672
+Portugal Lisbon Lisbon,5677
+Spain Madrid,5804
+Poland Warsaw,5855
+Russia Moscow,5884
+China Beijing Municipality Beijing,5919
+Chile Santiago *,5924
+Morocco Casablanca *,5983
+Austria Vienna Vienna,5994
