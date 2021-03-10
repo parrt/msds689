@@ -32,16 +32,24 @@ By the end of this course, students will be able to:
 
 **SPATIAL COORDINATES:**<br>
 
+All lectures will be online via zoom thanks to COVID.
+
+<!--
 * Class is held at 101 Howard in 5th floor classroom 527.
 * My office is room 607 @ 101 Howard up on mezzanine
+-->
 
-**TEMPORAL COORDINATES.** Fri Jan 25 - Fri Mar 8, 2019
+**TEMPORAL COORDINATES.** Fri Mar 26 - Fri Mar 7, 2021
 
+Lectures are Fridays 10-11AM California time
+
+<!--
 * Section 01: Fri 10-11:55AM
 * Section 02: Fri 2:20-4:15PM 
 * Exams: Thur Feb 13 3:15-4:15PM, Fri Mar 6 in class 10-11:30am for both classes at once
+-->
 
-**INSTRUCTION FORMAT**. Class runs for 1:55 hours, 2 days/week. Instructor-student interaction during lecture is encouraged and we'll mix in mini-exercises / labs during class. All programming will be done in the Python 3.6 (not 3.7) programming language, unless otherwise specified.
+**INSTRUCTION FORMAT**. Class runs for 1:50 hours 1 day/week. Instructor-student interaction during lecture is encouraged and we'll mix in mini-exercises / labs during class. All programming will be done in the Python 3 programming language, unless otherwise specified.
 
 **TARDINESS.** Please be on time for class. It is a big distraction if you come in late.
 
@@ -57,11 +65,21 @@ If you ever have questions about what constitutes plagiarism, cheating, or acade
 
 | Artifact | Grade Weight | Due date |
 |--------|--------|--------|
+|[OO hashtable](projects/oohtable/oohtable.md)| 8% | Fri, Apr 2 10:00am |
+|[Clustering](projects/kmeans/kmeans.md)| 17% | Sun, Apr 18 11:59pm |
+|[Feature selection and importance](projects/featimp/featimp.md)| 20% | Sun, May 9 11:59pm |
+|Exam 1| 25%| 3:30PM-4:30PM Fri Apr 16 |
+|Exam 2| 30%| 10AM-11:00AM Fri May 7 |
+
+<!--
+| Artifact | Grade Weight | Due date |
+|--------|--------|--------|
 |[OO hashtable](projects/oohtable/oohtable.md)| 8% | Fri, Jan 31 11:59pm |
 |[Clustering](projects/kmeans/kmeans.md)| 17% | Sun, Feb 16 11:59pm |
 |[Feature selection and importance](projects/featimp/featimp.md)| 20% | Wed, Mar 4 11:59pm |
 |Exam 1| 25%| 3:15PM-4:15PM Thur Feb 13 |
 |Exam 2| 30%| 10AM-11:00AM Fri Mar 6 |
+-->
 
 All projects will be graded with the specific input or tests given in the project description, so you understand precisely what is expected of your program. Consequently, projects will be graded in binary fashion: They either work or they do not. The only exception is when your program does not run on the grader's or my machine because of some cross-platform issue. This is typically because a student has hardcoded some file name or directory into their program. In that case, we will take off *a minimum* of 10% instead of giving you a 0, depending on the severity of the mistake. Please go to github and verify that the website has the proper files for your solution. That is what I will download for testing.
 
