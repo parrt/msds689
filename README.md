@@ -23,7 +23,7 @@ A very useful set of [programming-concepts-for-data-science](https://github.com/
 By the end of this course, students will be able to:
 
 1. Describe object-oriented programming and use objects to construct linked lists, trees, and graph data structures
-2. Identify the critical logic and algorithms in the code of others
+2. Identify the essential logic and algorithms in the code of others
 3. Implement critical algorithms, such as sorting, searching, and list manipulations
 4. Create Trie data structures
 5. Design recursive algorithms
@@ -84,7 +84,7 @@ If you ever have questions about what constitutes plagiarism, cheating, or acade
 |Exam 2| 30%| 10AM-11:00AM Fri Mar 6 |
 -->
 
-At the end of the last module, we studied feature importance and briefly touched on clustering.  There was not time to study these topics in more detail through projects, but they are important and students report getting related interview questions extremely frequently. Consequently, the faculty has decided to include free-form reports on these machine-learning related topics in this data structures and algorithms class. Here are two quick comments I received from the last cohort concerning these projects:
+At the end of the last module, we studied feature importance and briefly touched on clustering.  There was not time to study these topics in more detail through projects, but they are important and students report getting related interview questions extremely frequently. Consequently, while seemingly a bit out of place, the faculty has decided to include free-form reports on these machine-learning related topics in this data structures and algorithms class. Here are two quick comments I received from the last cohort concerning these projects:
 
 <img src="student-featimp.png" width="600">
 
