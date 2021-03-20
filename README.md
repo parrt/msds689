@@ -20,11 +20,11 @@ A very useful set of [programming-concepts-for-data-science](https://github.com/
 By the end of this course, students will be able to:
 
 1. Describe object-oriented programming and use objects to construct linked lists, trees, and graph data structures
-2. Implement critical algorithms, such as searching and list manipulations
-3. Build hash tables
+2. Identify the critical logic and algorithms in the code of others
+3. Implement critical algorithms, such as sorting, searching, and list manipulations
 4. Create Trie data structures
 5. Design recursive algorithms
-6. Compare algorithmic complexity using “big-O” notation
+6. Analyze and compare algorithmic complexity using “big-O” notation
 
 # Administrivia
 
@@ -80,6 +80,7 @@ If you ever have questions about what constitutes plagiarism, cheating, or acade
 |Exam 1| 25%| 3:15PM-4:15PM Thur Feb 13 |
 |Exam 2| 30%| 10AM-11:00AM Fri Mar 6 |
 -->
+
 
 All projects will be graded with the specific input or tests given in the project description, so you understand precisely what is expected of your program. Consequently, projects will be graded in binary fashion: They either work or they do not. The only exception is when your program does not run on the grader's or my machine because of some cross-platform issue. This is typically because a student has hardcoded some file name or directory into their program. In that case, we will take off *a minimum* of 10% instead of giving you a 0, depending on the severity of the mistake. Please go to github and verify that the website has the proper files for your solution. That is what I will download for testing.
 

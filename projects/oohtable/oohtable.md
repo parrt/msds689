@@ -4,7 +4,7 @@ In [MSDS962](https://github.com/parrt/msds692/blob/master/hw/search.md) you lear
 
 Rather than updating your own original code base, you will download and update a previous student's code. I have provided everyone with a common `htable.py` to start with (rename it to `oohtable.py`); please see the files area on Canvas. This will give you an opportunity to read somebody else's code from a few years ago. It's more or less okay but not very pretty. You are free to improve the code quality as you add features and convert it to an object-oriented version in this project. Learning to read and modify somebody else's code is a critical skill to gain in order to be productive at work.
 
-As you work on this project, I encourage you reflect on:
+As you work on this project, I encourage you to reflect on:
 
 * How easy is it to understand someone else's code? 
 * Is it hard to read without comments?
