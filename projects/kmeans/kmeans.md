@@ -38,7 +38,7 @@ Here's a sample run on one dimensional data using some fake grade data:
 
 Your software must also handle more than one dimensional data. For example, on the cancer data set there are *p*=30 features.
 
-Is another test, let's generate two synthetic distributions, one nested in the other. As you can see, kmeans performs poorly on disjoint and nested structures:
+As a *p*>1 test, let's generate two synthetic distributions, one nested in the other. As you can see, kmeans performs poorly on disjoint and nested structures:
 
 ```python
 from sklearn.datasets import make_circles
@@ -52,10 +52,10 @@ print(centroids)
 colors=np.array(['#4574B4','#A40227'])
 plt.scatter(X[:,0], X[:,1], c=colors[labels])
 plt.show()
-plt.savefig("/Users/parrt/Desktop/nested.png", dpi=200)
+plt.savefig("/Users/parrt/Desktop/nested-kmeans.png", dpi=200)
 ```
 
-<img src="nested.png" width="300">
+<img src="nested-kmeans.png" width="300">
 
 If `centroids='kmeans++'` then your algorithm should use the kmeans++ mechanism for selecting initial centroid, as described next. 
 
@@ -129,12 +129,31 @@ img_.show()
 
 For testing, I cut out and used my [eyes](eyes.png) from that Vancouver shot. <img src="eyes.png" width="50">
 
-## Advanced: Spectral clustering
+## Spectral clustering
 
-In the introduction of machine learning, we discussed how to use random forests in an unsupervised way to get a similarity or distance metric from observation *i* to observation *j*. This information is not directly useful in k-means because the means are not typically observations (they are the means of a cluster of them). That means we can't measure the distance of a point to a cluster. Instead, we can use spectral clustering which accepts a similarity matrix, does some linear algebra magic, and then clusters a transformed space using its own kmeans. I used sklearn's built-in mechanism:
+In the introduction of machine learning, we briefly mentioned spectral clustering as a possible more advanced clustering mechanism.  By reading the web and possibly using content from another MSDS class, you can investigate using spectral clustering. For example, here is a much better clustering of the nested distributions that kmeans failed to handle well:
+
+```
+cluster = SpectralClustering(n_clusters=2, affinity="nearest_neighbors")
+labels = cluster.fit_predict(X)  # pass X not similarity matrix
+
+print(labels)
+colors=np.array(['#4574B4','#A40227'])
+plt.scatter(X[:,0], X[:,1], c=colors[labels])
+plt.savefig("/Users/parrt/Desktop/nested-spectral.png", dpi=200)
+plt.show()
+```
+
+<img src="nested-spectral.png" width="300">
+
+That example uses a built-in mechanism called "nearest neighbors" to compute the distance between all pairs of records. When there is categorical data or the number of dimensions gets very high, Euclidean and similar distance measures are inappropriate. To solve this last from, see the next section.
+
+### Advanced: using RFs to compute similarity matrices
+
+We also discussed how to use random forests in an unsupervised way to get a similarity or distance metric from observation *i* to observation *j*. This information is not directly useful in k-means because the means are not typically observations (they are the means of a cluster of them). That means we can't measure the distance of a point to a cluster. Instead, we can use spectral clustering, which can accept a similarity matrix. It does some linear algebra magic and then clusters a transformed space using its own kmeans. I used sklearn's built-in mechanism:
 
 ```python
-S = similarity_matrix(X)
+S = similarity_matrix(X) # breiman's trick
 cluster = SpectralClustering(n_clusters=2, affinity='precomputed')
 cluster.fit_predict(S) # pass similarity matrix not X
 ```
@@ -144,12 +163,12 @@ And then got a confusion matrix that improves upon the standard kmeans score for
 ```
        pred F  pred T
 Truth                
-F         198      14
-T          39     318
-clustering accur 0.9068541300527241
+F         196      16
+T          31     326
+clustering accur 0.9173989455184535
 ```
 
-You are welcome to implement your own spectral clustering and then  you can use your own kmeans implementation.
+Using kmeans gets a similar result, but it's a good check to see if your similarity matrix coming out of the random forest is correct.
 
 ### Breiman's RF for unsupervised learning trick
 
@@ -180,15 +199,11 @@ def leaf_samples(rf, X:np.ndarray):
 ## Deliverables
 
 1. You must provide `kmeans.py` in root directory of your repo. This should include all of your algorithm implements and support code.
-2. You must submit a notebook called `kmeans.ipynb` with the associated PDF generated from it to ease our grading, `kmeans.pdf`.  The notebook is really more like a report than a dump of your code.
+2. You must submit a notebook called `kmeans.ipynb` with the associated PDF generated from it to ease our grading, `kmeans.pdf`.  The notebook should be a report, not a dump of your code.
 
 ## Assessment
 
-I believe I will have help with a grader, but reading your reports will take significantly longer than when I provide you some unit tests. Sorry in advance. Also, given the wide range of reports that you will submit, I will limit myself to one of three grades check minus, check, check plus, corresponding roughly to C, B, A.
-
-You should consider adding more tests. For example I got about .71 accuracy on MNIST loaded via sklearn's `load_digits()` function with straight kmeans++.  Using spectral clustering and a Euclidean distance metric between image vectors, I got about .79 accuracy. Note this is not the real MNIST data set as the vectors are 64 not the full MNIST size.  
-
-Here are some [sample kmeans tests](http://www.cs.cornell.edu/courses/cs1110/2014sp/assignments/assignment4/skeleton/kmeans_test.py).
+I will be scanning through your reports, so grading could take take significantly longer than when I provide you some unit tests. Sorry in advance. Also, given the wide range of reports that you will submit, I will limit myself to one of three grades check, check minus, check minus minus, corresponding roughly to A, B, C.
 
 You should also think about explaining how all of your algorithms work, including how you identify which cluster centroids should be associated with which true labels. Talk about any extra stuff you've done and other tests. Ask yourself what you don't know and what you'd like to learn at the start of this project. Then those are good questions to ask and answer in your report notebook. Try to create something that you will be proud to show potential employers.
 
