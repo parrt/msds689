@@ -1,8 +1,8 @@
-# Implementing kmeans clustering
+# Clustering extravaganza
 
-The goal of this project is to get more practice implementing algorithms, as well as translating pseudocode algorithms to Python. This project is also very loosely defined as it is much more realistic. Previously, I very carefully laid out exactly the process to follow. Now you will have to think about the whole problem and plan your approach. Further, the exact assessment rubric is not specified. Your goal is to produce a notebook (and submit a PDF version) that is a kind of report or tutorial you might publish, detailing your exploration of kmeans clustering. This could be useful as an artifact to send to potential employers.  (*But, please don't post your results publicly on the Internet as I will likely use these projects in the future*.)
+The goal of this project is to get more practice implementing algorithms, as well as translating pseudocode algorithms to Python. This project is also very loosely defined as it is meant to be much more realistic. Previously, I very carefully laid out exactly the process for you to follow. Now, you will have to think about the whole problem and plan your approach. Further, the exact assessment rubric is not specified. Your goal is to produce a notebook (and submit a PDF version) that is a kind of report or tutorial you might publish, detailing your exploration of kmeans and other clustering algorithms. This will be useful artifact to send to potential employers.  (*But, please don't post your results publicly on the Internet as I will likely use these projects in the future*.) With probability 92.5%, you will be asked to describe kmeans clustering during interviews.
 
-These algorithms were surprisingly challenging to get working because there are a number of pitfalls that can take a while to debug. With probability 92.5%, you will be asked to describe kmeans clustering during interviews.
+The kmeans-related algorithms were surprisingly challenging to get working because there are a number of pitfalls that can take a while to debug. 
 
 You will work under `kmeans-`*userid* repo.
 
@@ -10,7 +10,7 @@ You will work under `kmeans-`*userid* repo.
 
 ## kmeans
 
-First, you must implement the standard kmeans algorithm:
+First, you should implement the standard kmeans algorithm:
 
 <img src="kmeans.png" width="550">
 
@@ -20,29 +20,68 @@ and put into file `kmeans.py` in root directory of your repo.  You can import th
 %run kmeans
 ```
 
-Your function must follow this interface:
+Your function can follow an interface like this but you can do what you want:
 
 ```python
-def kmeans(X:np.ndarray, k:int, centroids=None, tolerance=1e-2):
+def kmeans(X:np.ndarray, k:int, centroids=None, max_iter=30, tolerance=1e-2):
     ...
-    return centroids, clusters
+    return centroids, labels
 ```
 
-where `centroids` is an *k* x *p* matrix containing the *k* centroids (vectors are *p* long). The `clusters` return value is a list of length *k* containing lists of observation indexes associated with every cluster. I use the tolerance as a general guideline for comparing previous and next generation centroids. If the norm of the two flattened centroid lists is less than the tolerance, I stop.  By default, `centroids=None` indicates that your algorithm should randomly select *k* unique centroids. Here's a sample run on one dimensional data:
+where `centroids` is an *k* x *p* matrix containing the *k* centroids (vectors are *p* long). The `labels` return value is a list of length *n* the label associated with each input vector. I use the tolerance as a general guideline for comparing previous and next generation centroids. If the average norm of centroids-previous_centroids is less than the tolerance, I stop.  I also have `max_iter` as a failsafe to prevent it from going too long. By default, `centroids=None` indicates that your algorithm should randomly select *k* unique centroids. 
 
-<img src="sample-run.png" width="400">
+### Testing on some synthetic data
+
+Here's a sample run on one dimensional data using some fake grade data:
+
+<img src="sample-run.png" width="500">
 
 Your software must also handle more than one dimensional data. For example, on the cancer data set there are *p*=30 features.
 
-If `centroids='kmeans++'` then your algorithm should use the kmeans++ mechanism for selecting initial centroid. 
+Is another test, let's generate two synthetic distributions, one nested in the other. As you can see, kmeans performs poorly on disjoint and nested structures:
+
+```python
+from sklearn.datasets import make_circles
+import matplotlib.pyplot as plt
+
+from kmeans import *
+
+X, _ = make_circles(n_samples=500, noise=0.1, factor=.2)
+centroids, labels = kmeans(X, 2, centroids='kmeans++')
+print(centroids)
+colors=np.array(['#4574B4','#A40227'])
+plt.scatter(X[:,0], X[:,1], c=colors[labels])
+plt.show()
+plt.savefig("/Users/parrt/Desktop/nested.png", dpi=200)
+```
+
+<img src="nested.png" width="300">
+
+If `centroids='kmeans++'` then your algorithm should use the kmeans++ mechanism for selecting initial centroid, as described next. 
+
 
 ## kmeans++
 
 You must find the kmeans++ initial centroid identification algorithm somewhere on the web and implement that in your kmeans.py file.  Actually those get complicated, estimated joint density etc... Not necessary. The basic idea is just to randomly pick the first of *k* centroids. Then, pick next *k*-1 points by selecting points that maximize the minimum distance to all existing cluster centroids. So for each point, compute the minimum distance to each cluster.  Among those min distances to clusters for each point, find the max distance. The associated point is the new centroid.
 
+```
+def select_centroids(X,k):
+    """
+    kmeans++ algorithm to select initial points:
+
+    1. Pick first point randomly
+    2. Pick next k-1 points by selecting points that maximize the minimum
+       distance to all existing clusters. So for each point, compute distance
+       to each cluster and find that minimum.  Among the min distances to a cluster
+       for each point, find the max distance. The associated point is the new centroid.
+
+    Return centroids as k x p array of points from X.
+    """
+```
+
 Here's a sample run on the cancer data set for me:
 
-<img src="cancer.png" width="400">
+<img src="cancer.png" width="500">
 
 You will notice that I have generated a confusion matrix but how do we know which centroid is associated with which true label (we don't have the *y* target to work with during clustering)?  What I do is to find the most common prediction in each cluster and then assume that is the prediction, flipping each element in that cluster to the appropriate label. Then, we can compare those results to the known *y*.
 
@@ -52,7 +91,7 @@ In the introduction to machine learning course, we looked at the application of 
 
 ### Greyscale
 
-Here's an original picture from North Africa taken by my father during World War II and one with just k=4 levels of gray:
+Here's an original [picture from North Africa](north-africa-1940s-grey.png) taken by my father during World War II and one with just k=4 levels of gray (takes mine 45s to compute):
 
 <img src="north-africa-1940s-grey.png" width="50%"><img src="just-4-greys.png" width="50%">
 
@@ -60,37 +99,39 @@ My code looks something like this:
 
 ```python
 k=4
-centroids, clusters = kmeans(X_, k=k, centroids='kmeans++', tolerance=.01)
+centroids, labels = kmeans(X, k=k, centroids='kmeans++', tolerance=.01, verbose=True)
 centroids = centroids.astype(np.uint8)
-reassign_grey(X, centroids)
-img_ = Image.fromarray(X.reshape(h,w), 'L') # L means grayscale
+X = centroids[labels] # reassign all points
+
+img_ = Image.fromarray(X.reshape(h,w), 'L')
 img_.show()
 ```
 
-Note that you have to write a function to convert all of the values to one of the values in `centroids`.
-
+I strongly recommend that you start out with a very small grayscale image to test your code and to speed up the debugging cycle.
+ 
 ### Color
 
-As an example of color compression, here is your favorite instructor in Vancouver as a disembodied head visiting Chinatown and a compressed version that uses only 32 colors:
+As an example of color compression, here is your [favorite instructor](parrt-vancouver.jpg) in Vancouver as a disembodied head visiting Chinatown and a compressed version that uses only 32 colors (takes mine 3m18s to complete limited to 30 iterations):
 
-<img src="parrt-vancouver.jpg" width="50%"><img src="demon.png" width="50%">
+<img src="parrt-vancouver.jpg" width="50%"><img src="parrt-vancouver-k32.png" width="50%">
 
-(I like those demon eyes!)
-
-Here is what my code looks like, once again using the magic `reassign_colors()` function I wrote:
+Here is what my code looks like:
 
 ```python
 k=32
-centroids, clusters = kmeans(X_, k=k, centroids='kmeans++', tolerance=.01)
+centroids, labels = kmeans(X, k=k, centroids='kmeans++', max_iter=30)
 centroids = centroids.astype(np.uint8)
-reassign_colors(X, centroids)
+X = centroids[labels] # reassign all points
+
 img_ = Image.fromarray(X.reshape((h,w,3)))
 img_.show()
 ```
 
+For testing, I cut out and used my [eyes](eyes.png) from that Vancouver shot. <img src="eyes.png" width="50">
+
 ## Advanced: Spectral clustering
 
-In the introduction of machine learning, we discussed how to use random forests in an unsupervised way to get a similarity or distance metric from observation *i* to observation *j*. This information is not directly useful in k means because the means are not typically observations (they are the means of a cluster of them). That means we can't measure the distance of a point to a cluster. Instead, we can use spectral clustering which accepts a similarity matrix, does some linear algebra magic, and then clusters a transformed space using its kmeans. I used sklearn's built-in mechanism:
+In the introduction of machine learning, we discussed how to use random forests in an unsupervised way to get a similarity or distance metric from observation *i* to observation *j*. This information is not directly useful in k-means because the means are not typically observations (they are the means of a cluster of them). That means we can't measure the distance of a point to a cluster. Instead, we can use spectral clustering which accepts a similarity matrix, does some linear algebra magic, and then clusters a transformed space using its own kmeans. I used sklearn's built-in mechanism:
 
 ```python
 S = similarity_matrix(X)
