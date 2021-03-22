@@ -158,7 +158,7 @@ cluster = SpectralClustering(n_clusters=2, affinity='precomputed')
 cluster.fit_predict(S) # pass similarity matrix not X
 ```
 
-And then got a confusion matrix that improves upon the standard kmeans score for cancer data set.
+And then got a confusion matrix for the cancer data set:
 
 ```
        pred F  pred T
