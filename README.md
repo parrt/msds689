@@ -6,13 +6,15 @@ This course is part of the [MS in Data Science program at the University of San 
 The goal is to give students a deeper and more general view of data structures and algorithms. While students have examined a number of data structures, such as binary trees, already, this course provides a much more in-depth study. This depth will benefit them greatly in the advanced machine learning course. This course also tends to address many of the difficult algorithm questions students get during job interviews. The critical data structures covered in this class are: lists, linked lists, trees, graphs, hash tables, and tries. The course also covers a variety of common and useful recursive and non-recursive algorithms, such as searching and sorting.
 
 
-<img src="student-trie.png" width="400">
+<img src="student-trie.png" width="400" border="1">
 
 # Resources
 
 Here is a great free book on [algorithms by Jeff Erickson](http://jeffe.cs.illinois.edu/teaching/algorithms/).
 
+<!--
 I'll be pulling some material from Kleinberg and Tardos, *Algorithm Design*. US copyright law allows me to make copies of small portions of books for educational use, which I have done. Please see compressed pdf `kleinberg-common-running-times.7z` in Canvas course files area. (Do not post that material publicly.)
+-->
 
 A very useful set of [programming-concepts-for-data-science](https://github.com/shik3519/programming-concepts-for-data-science/blob/master/notebooks/03-common%20datastructures%20and%20algorithms.ipynb) and [data science coding questions](https://github.com/shik3519/programming-concepts-for-data-science/blob/master/notebooks/04-coding%20questions%20for%20DS%20interview.ipynb) by former USF MSDS student [Shikhar Gupta](https://github.com/shik3519).
 
@@ -44,7 +46,7 @@ All lectures will be online via zoom thanks to COVID.
 
 **TEMPORAL COORDINATES.** Fri Mar 26 - Fri Mar 7, 2021
 
-Lectures are Fridays 10-11AM California time
+Lectures are Fridays 10-11:50AM California time
 
 <!--
 * Section 01: Fri 10-11:55AM
