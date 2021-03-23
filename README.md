@@ -5,12 +5,21 @@ This course is part of the [MS in Data Science program at the University of San 
 
 The goal is to give students a deeper and more general view of data structures and algorithms. While students have examined a number of data structures, such as binary trees, already, this course provides a much more in-depth study. This depth will benefit them greatly in the advanced machine learning course. This course also tends to address many of the difficult algorithm questions students get during job interviews. The critical data structures covered in this class are: lists, linked lists, trees, graphs, hash tables, and tries. The course also covers a variety of common and useful recursive and non-recursive algorithms, such as searching and sorting.
 
-
-<center>
 <table><tr><td>
 <img src="student-trie.png" width="350">
 </td></tr></table>
-</center>
+
+
+# Course Learning Objectives (CLOs)
+
+By the end of this course, students will be able to:
+
+1. Describe object-oriented programming and use objects to construct linked lists, trees, and graph data structures
+2. Identify the essential logic and algorithms in the code of others
+3. Implement critical algorithms, such as sorting, searching, and list manipulations
+4. Create Trie data structures
+5. Design recursive algorithms
+6. Analyze and compare algorithmic complexity using “big-O” notation
 
 # Resources
 
@@ -24,18 +33,7 @@ A very useful set of [programming-concepts-for-data-science](https://github.com/
 
 [10 Steps to Solving a Programming Problem](https://codeburst.io/10-steps-to-solving-a-programming-problem-8a32d1e96d74)
 
-# Course Learning Objectives (CLOs)
-
-By the end of this course, students will be able to:
-
-1. Describe object-oriented programming and use objects to construct linked lists, trees, and graph data structures
-2. Identify the essential logic and algorithms in the code of others
-3. Implement critical algorithms, such as sorting, searching, and list manipulations
-4. Create Trie data structures
-5. Design recursive algorithms
-6. Analyze and compare algorithmic complexity using “big-O” notation
-
-# Administrivia
+# Class details
 
 **INSTRUCTOR.** [Terence Parr](http://parrt.cs.usfca.edu). I’m a professor in the computer science and [data science program](https://www.usfca.edu/arts-sciences/graduate-programs/data-science) departments and was founding director of the MS in Data Science program at USF (which became the MS data science program).  Please call me Terence or Professor (not “Terry”).
 
@@ -61,14 +59,6 @@ Lectures are Fridays 10-11:50AM California time
 **INSTRUCTION FORMAT**. Class runs for 1:50 hours 1 day/week. Instructor-student interaction during lecture is encouraged and we'll mix in mini-exercises / labs during class. All programming will be done in the Python 3 programming language, unless otherwise specified.
 
 **TARDINESS.** Please be on time for class. It is a big distraction if you come in late.
-
-**ACADEMIC HONESTY.** You must abide by the copyright laws of the United States and academic honesty policies of USF. You may not copy code from other current or previous students. All suspicious activity will be investigated and, if warranted, passed to the Dean of Sciences for action.  Copying answers or code from other students or sources during a quiz, exam, or for a project is a violation of the university’s honor code and will be treated as such. Plagiarism consists of copying material from any source and passing off that material as your own original work. Plagiarism is plagiarism: it does not matter if the source being copied is on the Internet, from a book or textbook, or from quizzes or problem sets written up by other students. Giving code or showing code to another student is also considered a violation.
-
-The golden rule: **You must never represent another person’s work as your own.**
-
-If you ever have questions about what constitutes plagiarism, cheating, or academic dishonesty in my course, please feel free to ask me.
-
-**Note:** Leaving your laptop unattended is a common means for another student to take your work. It is your responsibility to guard your work. Do not leave your printouts laying around or in the trash. *All persons with common code are likely to be considered at fault.*
 
 ## Student evaluation
 
@@ -145,6 +135,16 @@ Solution](https://leetcode.com/explore/learn/card/recursion-i/256/complexity-ana
   * [Problem-solving exercise: LeetCode backtracking](https://leetcode.com/explore/interview/card/top-interview-questions-medium/109/backtracking/795/) (Walking graphs often involves backtracking)
 
 The use of recursive algorithms will be emphasized frequently and wherever appropriate to reinforce this critical mechanism. Discussion of formal algorithm complexity will also be emphasized throughout the lectures.
+
+# Administrivia
+
+**ACADEMIC HONESTY.** You must abide by the copyright laws of the United States and academic honesty policies of USF. You may not copy code from other current or previous students. All suspicious activity will be investigated and, if warranted, passed to the Dean of Sciences for action.  Copying answers or code from other students or sources during a quiz, exam, or for a project is a violation of the university’s honor code and will be treated as such. Plagiarism consists of copying material from any source and passing off that material as your own original work. Plagiarism is plagiarism: it does not matter if the source being copied is on the Internet, from a book or textbook, or from quizzes or problem sets written up by other students. Giving code or showing code to another student is also considered a violation.
+
+The golden rule: **You must never represent another person’s work as your own.**
+
+If you ever have questions about what constitutes plagiarism, cheating, or academic dishonesty in my course, please feel free to ask me.
+
+**Note:** Leaving your laptop unattended is a common means for another student to take your work. It is your responsibility to guard your work. Do not leave your printouts laying around or in the trash. *All persons with common code are likely to be considered at fault.*
 
 **USF policies and legal declarations**
 
