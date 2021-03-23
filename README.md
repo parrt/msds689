@@ -21,17 +21,7 @@ By the end of this course, students will be able to:
 5. Design recursive algorithms
 6. Analyze and compare algorithmic complexity using “big-O” notation
 
-# Resources
 
-Here is a great free book on [algorithms by Jeff Erickson](http://jeffe.cs.illinois.edu/teaching/algorithms/).
-
-<!--
-I'll be pulling some material from Kleinberg and Tardos, *Algorithm Design*. US copyright law allows me to make copies of small portions of books for educational use, which I have done. Please see compressed pdf `kleinberg-common-running-times.7z` in Canvas course files area. (Do not post that material publicly.)
--->
-
-A very useful set of [programming-concepts-for-data-science](https://github.com/shik3519/programming-concepts-for-data-science/blob/master/notebooks/03-common%20datastructures%20and%20algorithms.ipynb) and [data science coding questions](https://github.com/shik3519/programming-concepts-for-data-science/blob/master/notebooks/04-coding%20questions%20for%20DS%20interview.ipynb) by former USF MSDS student [Shikhar Gupta](https://github.com/shik3519).
-
-[10 Steps to Solving a Programming Problem](https://codeburst.io/10-steps-to-solving-a-programming-problem-8a32d1e96d74)
 
 # Class details
 
@@ -96,9 +86,19 @@ Each project has a hard deadline and only those projects working correctly befor
 
 **Grading standards**. I consider an **A** grade to be above and beyond what most students have achieved. A **B** grade is an average grade for a student or what you could call "competence" in a business setting. A **C** grade means that you either did not or could not put forth the effort to achieve competence. Below **C** implies you did very little work or had great difficulty with the class compared to other students.
 
-# Review
+# Review and Resources
 
 * Review [OO notebook](https://github.com/parrt/msds501/blob/master/notes/OO.ipynb) and [Operator overloading notebook](notes/operator-overloading.ipynb)
+
+Here is a great free book on [algorithms by Jeff Erickson](http://jeffe.cs.illinois.edu/teaching/algorithms/).
+
+<!--
+I'll be pulling some material from Kleinberg and Tardos, *Algorithm Design*. US copyright law allows me to make copies of small portions of books for educational use, which I have done. Please see compressed pdf `kleinberg-common-running-times.7z` in Canvas course files area. (Do not post that material publicly.)
+-->
+
+A very useful set of [programming-concepts-for-data-science](https://github.com/shik3519/programming-concepts-for-data-science/blob/master/notebooks/03-common%20datastructures%20and%20algorithms.ipynb) and [data science coding questions](https://github.com/shik3519/programming-concepts-for-data-science/blob/master/notebooks/04-coding%20questions%20for%20DS%20interview.ipynb) by former USF MSDS student [Shikhar Gupta](https://github.com/shik3519).
+
+[10 Steps to Solving a Programming Problem](https://codeburst.io/10-steps-to-solving-a-programming-problem-8a32d1e96d74)
 
 # Syllabus
 
