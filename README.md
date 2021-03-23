@@ -95,7 +95,7 @@ At the end of the last module, we studied feature importance and briefly touched
 </td></tr></table>
 
 <table><tr><td>
-<img src="student-kmeans.png" width="600">
+<img src="student-kmeans.png" width="550">
 </td></tr></table>
 
 The oohtable project will be graded with the specific input or tests given in the project description, so you understand precisely what is expected of your program. Consequently, projects will be graded in binary fashion: They either work or they do not. The only exception is when your program does not run on the grader's or my machine because of some cross-platform issue. This is typically because a student has hardcoded some file name or directory into their program. In that case, we will take off *a minimum* of 10% instead of giving you a 0, depending on the severity of the mistake. Please go to github and verify that the website has the proper files for your solution. That is what I will download for testing.
