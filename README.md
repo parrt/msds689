@@ -57,7 +57,7 @@ Lectures are Fridays 10-11:50AM California time
 |[OO hashtable](projects/oohtable/oohtable.md)| 8% | Fri, Apr 2 10:00am |
 |[Clustering](projects/kmeans/kmeans.md)| 17% | Sun, Apr 18 11:59pm |
 |[Feature selection and importance](projects/featimp/featimp.md)| 20% | Sun, May 9 11:59pm |
-|Exam 1| 25%| 3:30PM-4:30PM Fri Apr 16 |
+|Exam 1| 25%| 3:30PM-4:30PM Thu Apr 15 |
 |Exam 2| 30%| 10AM-11:00AM Fri May 7 |
 
 <!--
