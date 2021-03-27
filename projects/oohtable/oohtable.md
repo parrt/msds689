@@ -69,7 +69,11 @@ To get a list of the keyvalue pairs as tuples like `[('the', 9), ('and', 9), ...
 
 As with a built-in dictionary from Python, converting something to string using `str(table)` or just `print(table)` should also work. That means you have to implement the `__str__` method to print out the key:value pairs. We also had a method that dumped out all the buckets for debugging purposes called `htable_buckets_str()`.  Instead, we use `__repr__` with the class definition to print out a representation of that object.
 
-**You must support any object as key, not just strings and integers**, whereas, in MSDS692 we restricted the type of keys. Use the built in `hash(o)` function to get hashcodes for key objects.
+**You must support any object as key, not just strings and integers**, whereas, in MSDS692 we restricted the type of keys. Use the built in `hash(o)` function to get hashcodes for all key objects; you can remove the old `hashcode()` function we had. For example, your code will now do things like this:
+
+```python
+h = hash(key) % len(self.buckets)
+```
 
 Here are all of the methods that you must implement in the class definition:
 
