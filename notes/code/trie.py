@@ -77,8 +77,8 @@ if __name__ == '__main__':
     #words = words[:12000] # reduce size of word list during development
     print(f"{len(words)} words in dictionary")
 
-    # uncomment to do O(n*m) search
-    # brute_force_search(words)
+    # do super slow O(n*m) search
+    brute_force_search(words[:50000])  # search for the first 50000 words
 
     process = psutil.Process(os.getpid())
     print(f"{process.memory_info().rss/1024**2:,.3f} MB in use before creating TRIE")
