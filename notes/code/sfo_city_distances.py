@@ -13,6 +13,7 @@ for row in df.iterrows():
     G.add_edge('San Francisco',to,distance=d)
 
 # This just draws the graph with distances as edge labels
+# Pick one of the next layouts
 layout = 'circular'
 layout = 'spiral'
 layout = 'fruchterman_reingold'
@@ -28,7 +29,7 @@ else:
 plt.figure(figsize=(15,15))
 nx.draw_networkx_edges(G, positions, width=.3)
 nx.draw_networkx_nodes(G, positions, node_size=5)
-nx.draw_networkx_labels(G, positions, node_size=5, font_size=7)
+nx.draw_networkx_labels(G, positions, font_size=7)
 edge_labels = nx.get_edge_attributes(G, 'distance')
 nx.draw_networkx_edge_labels(G, positions,
                              edge_labels=edge_labels,
