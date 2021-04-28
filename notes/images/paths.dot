@@ -1,0 +1,20 @@
+digraph Trie {
+	rankdir=TD;
+	margin=0.0;
+	graph [nodesep=0.45 ranksep=0.25]
+    	node [shape=circle margin="0.03" fixedsize=true penwidth="0.5" radius=0.4 height=.4 label=" "];
+    	edge [arrowsize=.3 penwidth="0.3" fontname="Arial"]
+	A [label="A" color="green"]
+	C [label="C"]
+	B [label="B"]
+	D [label="D"]
+	E [label="E" color="red"]
+	A -> B
+	A -> D
+	D -> B
+	B -> C
+	C -> A [weight=0]
+	D -> E
+
+}
+

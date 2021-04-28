@@ -15,23 +15,27 @@ G = nx.read_edgelist('/Users/parrt/data/facebook_combined.txt')
 
 layout = 'circular'
 layout = 'spiral'
+layout = 'spring'
 layout = 'fruchterman_reingold'
 nodes = list(G.nodes)
 edges = list(G.edges)
 if layout=='circular':
     positions = nx.circular_layout(G)
-elif layout=='spiral':
+elif layout == 'spiral':
     positions = nx.spiral_layout(G)
+elif layout == 'spring':
+    positions = nx.spring_layout(G)
 else:
     positions = nx.fruchterman_reingold_layout(G)
 
+# Avoid overplotting: sample
 # subsample_nodes_idx = sample(nodes, 1000)
 # G = G.subgraph(subsample_nodes_idx)
 subsample_edges_idx = sample(edges, 2300)
 G = G.edge_subgraph(subsample_edges_idx)
 
 nx.draw_networkx_edges(G, positions, width=.05)
-nx.draw_networkx_nodes(G, positions, node_size=.1)
+nx.draw_networkx_nodes(G, positions, node_size=.01)
 plt.ylim(-1,1)
 plt.xlim(-1,1)
 plt.axis("off")

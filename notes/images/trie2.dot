@@ -1,0 +1,24 @@
+digraph Trie {
+	rankdir=LR;
+	splines=line;
+	margin=0.0;
+	graph [nodesep=0.45 ranksep=0.25]
+    	node [shape=circle margin="0.03" fixedsize=true penwidth="0.5" radius=0.2 height=.25 label=" "];
+    	edge [arrowsize=.5 penwidth="0.3" fontname="Arial"]
+	r -> ra [label="a"]
+	r -> rb [label="b"]
+
+	rb -> ro [label="o"]
+	ro -> rx [label="x"]
+
+	ra -> rp [label="p"]
+	rp -> rp2 [label="p"]
+	rp2 -> rl [label="l"]
+	rl -> re [label="e"]
+
+	rp -> re2 [label="e"]
+
+	ra -> rx2 [label="x"]
+	rx2 -> re3 [label="e"]
+}
+
