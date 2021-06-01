@@ -40,6 +40,20 @@ def brute_force_search(words):
     print(f"Brute force search time {stop-start:.2f}s") # wow: 265.85s (4.43 minutes)
 
 
+def dict_search(words):
+    start = time.time()
+    found = 0
+    d = {}
+    for w in words:
+        d[w] = 1
+    for w in words:
+        if w in d:
+            found += 1
+    print(f"{found} found out of {len(words)}")
+    stop = time.time()
+    print(f"Dict search time {stop-start:.2f}s") # 
+
+
 def create_trie(words):
     start = time.time()
     root = TrieNode()
@@ -77,8 +91,11 @@ if __name__ == '__main__':
     #words = words[:12000] # reduce size of word list during development
     print(f"{len(words)} words in dictionary")
 
-    # uncomment to do O(n*m) search
-    # brute_force_search(words)
+    # hashtable lookup using builtin
+    dict_search(words)
+
+    # do super slow O(n*m) search
+    brute_force_search(words[:50000])  # search for the first 50000 words
 
     process = psutil.Process(os.getpid())
     print(f"{process.memory_info().rss/1024**2:,.3f} MB in use before creating TRIE")

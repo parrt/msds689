@@ -38,7 +38,7 @@ I'm sure something better could be done. For example, from [this blog post](http
  
 ## Model-based importance strategies
 
-The default future importance that uses so-called *gini drop* for random forests in the sklearn lib is known to be biased. You will want to check out [Beware Default Random Forest Importances](https://explained.ai/rf-importance/index.html), which I wrote with Jeremy Howard and two previous students. The result of that article became the [rfpimp package](https://github.com/parrt/random-forest-importances), which contains simple implementations for:
+The default feature importance that uses so-called *gini drop* for random forests in the sklearn lib is known to be biased. You will want to check out [Beware Default Random Forest Importances](https://explained.ai/rf-importance/index.html), which I wrote with Jeremy Howard and two previous students. The result of that article became the [rfpimp package](https://github.com/parrt/random-forest-importances), which contains simple implementations for:
  
 * permutation importance
 * drop column importance
@@ -70,9 +70,9 @@ Given a mechanism to compute feature importances, you can get several results by
 
 <img src="error-bars.png" width="200">
 
-Make sure to normalize your future importances to the same range so that the variance is comparable.
+Make sure to normalize your feature importances to the same range so that the variance is comparable.
 
-It's also useful to get p-values to know whether a feature's importance is significant. To do that, we need a null distribution for comparison purposes. In other words, how likely is a feature to give the real feature importance by accident or randomly?   The idea is to shuffle the target variable y, and then compute the feature importances again.   Count how many times a feature is as important or more important than the true future importance computed as a baseline. If that percentage gets above say 5%, then that feature importance is not significant. I had to run the simulations about 80 times before I started getting reasonable results. This will take a while. ;)  As a starting point, you can check out this [kaggle notebook on null distributions](https://www.kaggle.com/ogrellier/feature-selection-with-null-importances). Here is one of his visualizations of a feature that is significant and one that is not:
+It's also useful to get p-values to know whether a feature's importance is significant. To do that, we need a null distribution for comparison purposes. In other words, how likely is a feature to give the real feature importance by accident or randomly?   The idea is to shuffle the target variable y, and then compute the feature importances again.   Count how many times a feature is as important or more important than the true feature importance computed as a baseline. If that percentage gets above say 5%, then that feature importance is not significant. I had to run the simulations about 80 times before I started getting reasonable results. This will take a while. ;)  As a starting point, you can check out this [kaggle notebook on null distributions](https://www.kaggle.com/ogrellier/feature-selection-with-null-importances). Here is one of his visualizations of a feature that is significant and one that is not:
 
 <img src="null-distribution.png" width="400">
 
@@ -83,7 +83,7 @@ It's also useful to get p-values to know whether a feature's importance is signi
 
 ## Assessment
 
-I believe I will have help with a grader, but reading your reports will take significantly longer than when I provide you some unit tests. Sorry in advance. Also, given the wide range of reports that you will submit, I will limit myself to one of three grades check minus, check, check plus, corresponding roughly to C, B, A.
+I believe I will have help with a grader, but reading your reports will take significantly longer than when I provide you some unit tests. Sorry in advance. Also, given the wide range of reports that you will submit, I will limit myself to one of three grades check, check minus, check minus minus, corresponding roughly to A, B, C.
 
 You should also think about explaining how all of your algorithms work and include a discussion of what you learned or questions you answered. Talk about any extra stuff you've done and other tests. Ask yourself what you don't know and what you'd like to learn at the start of this project. Then those are good questions to ask and answer in your report notebook. Try to create something that you will be proud to show potential employers.
 

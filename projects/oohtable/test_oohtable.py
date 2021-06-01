@@ -4,24 +4,12 @@ import pandas as pd
 def test_empty():
     table = HashTable(5)
     assert str(table) == "{}"
-    assert table.__repr__() == """0000->
-0001->
-0002->
-0003->
-0004->
-"""
 
 
 def test_single():
     table = HashTable(5)
     table["parrt"] = 99
     assert str(table) == "{parrt:99}"
-    assert table.__repr__() == """0000->
-0001->
-0002->
-0003->parrt:99
-0004->
-"""
 
 
 def test_get0():
@@ -39,12 +27,6 @@ def test_singleton():
     table = HashTable(5)
     table["parrt"] = {99}
     assert str(table) == "{parrt:{99}}"
-    assert table.__repr__() == """0000->
-0001->
-0002->
-0003->parrt:{99}
-0004->
-"""
 
 
 def test_int_to_int():
@@ -53,13 +35,6 @@ def test_int_to_int():
         table[i] = i
     s = str(table)
     assert s=="{5:5, 10:10, 1:1, 6:6, 2:2, 7:7, 3:3, 8:8, 4:4, 9:9}"
-    s = table.__repr__()
-    assert s == """0000->5:5, 10:10
-0001->1:1, 6:6
-0002->2:2, 7:7
-0003->3:3, 8:8
-0004->4:4, 9:9
-"""
 
 
 def test_str_to_str():
@@ -71,27 +46,18 @@ def test_str_to_str():
     table["g"] = "j"
     table["k"] = "k"
     s = str(table)
-    assert s=='{a:x, f:i, k:k, b:y, g:j, c:z}', "found "+s
-    s = table.__repr__()
-    assert s == """0000->
-0001->
-0002->a:x, f:i, k:k
-0003->b:y, g:j
-0004->c:z
-"""
+    s = '{'+ ', '.join(sorted(s[1:-1].split(', '))) +'}' # sort elements
+    assert s=='{a:x, b:y, c:z, f:i, g:j, k:k}', "found "+s
 
 
 def test_str_to_list():
     table = HashTable(5)
     table["parrt"] = [2, 99, 3942]
     table["tombu"] = [6, 3, 1024, 99, 102342]
-    assert str(table) == "{tombu:[6, 3, 1024, 99, 102342], parrt:[2, 99, 3942]}"
-    assert table.__repr__() == """0000->
-0001->tombu:[6, 3, 1024, 99, 102342]
-0002->
-0003->parrt:[2, 99, 3942]
-0004->
-"""
+    s = str(table)
+    assert table['parrt']==[2, 99, 3942]
+    assert table['tombu']==[6, 3, 1024, 99, 102342]
+
 
 def test_replace_str():
     table = HashTable(5)
@@ -102,14 +68,9 @@ def test_replace_str():
     table["g"] = "j"
     table["g"] = "k"
     s = str(table)
+    s = '{'+ ', '.join(sorted(s[1:-1].split(', '))) +'}' # sort elements
     assert s == '{a:i, b:y, g:k}', "found " + s
-    s = table.__repr__()
-    assert s == """0000->
-0001->
-0002->a:i
-0003->b:y, g:k
-0004->
-"""
+
 
 def test_len0():
     table = HashTable(5)
@@ -154,8 +115,8 @@ def test_iter():
     table["parrt"] = {99}
     keys = []
     for k in table:
-        keys.append(k)
-    assert keys==[100, 'a', 'b', 'parrt']
+        keys.append(str(k))
+    assert sorted(keys)==['100', 'a', 'b', 'parrt']
 
 
 def test_keys0():
