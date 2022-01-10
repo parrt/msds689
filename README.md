@@ -9,6 +9,15 @@ The goal is to give students a deeper and more general view of data structures a
 <img src="student-trie.png" width="350">
 </td></tr></table>
 
+At the end of the last module, we studied feature importance and briefly touched on clustering.  There was not time to study these topics in more detail through projects, but they are important and students report getting related interview questions extremely frequently. Consequently, while seemingly a bit out of place, the faculty has decided to include free-form reports on these machine-learning related topics in this data structures and algorithms class. Here are two quick comments I received from the last cohort concerning these projects:
+
+<table><tr><td>
+<img src="student-featimp.png" width="600">
+</td></tr></table>
+
+<table><tr><td>
+<img src="student-kmeans.png" width="550">
+</td></tr></table>
 
 # Course Learning Objectives (CLOs)
 
@@ -25,18 +34,18 @@ By the end of this course, students will be able to:
 
 # Class details
 
-**INSTRUCTOR.** [Terence Parr](http://parrt.cs.usfca.edu). I’m a professor in the computer science and [data science program](https://www.usfca.edu/arts-sciences/graduate-programs/data-science) departments and was founding director of the MS in Data Science program at USF (which became the MS data science program).  Please call me Terence or Professor (not “Terry”).
+**INSTRUCTOR.** [Terence Parr](http://parrt.cs.usfca.edu). I’m an adjunct professor in the [data science program](https://www.usfca.edu/arts-sciences/graduate-programs/data-science) departments and was founding director of the MS in Data Science program at USF (which became the MS data science program).  Please call me Terence or Professor (not “Terry”).
 
 **SPATIAL COORDINATES:**<br>
 
-All lectures will be online via zoom thanks to COVID.
+Class is held at 101 Howard on main floor 154-156.
 
 <!--
 * Class is held at 101 Howard in 5th floor classroom 527.
 * My office is room 607 @ 101 Howard up on mezzanine
 -->
 
-**TEMPORAL COORDINATES.** Fri Mar 26 - Fri Mar 7, 2021
+**TEMPORAL COORDINATES.** Fri January 28, 2022 - Fri March 11, 2022
 
 Lectures are Fridays 10-11:50AM California time
 
@@ -54,31 +63,12 @@ Lectures are Fridays 10-11:50AM California time
 
 | Artifact | Grade Weight | Due date |
 |--------|--------|--------|
-|[OO hashtable](projects/oohtable/oohtable.md)| 8% | Fri, Apr 2 10:00am |
-|[Clustering](projects/kmeans/kmeans.md)| 17% | Sun, Apr 18 11:59pm |
-|[Feature selection and importance](projects/featimp/featimp.md)| 20% | Sun, May 9 11:59pm |
-|Exam 1| 25%| 3:30PM-4:30PM Thu Apr 15 |
-|Exam 2| 30%| 10AM-11:00AM Fri May 7 |
+|[OO hashtable](projects/oohtable/oohtable.md)| 8% | Fri, Feb 4 11:59pm |
+|[Clustering](projects/kmeans/kmeans.md)| 17% | Sun, Feb 20 11:59pm |
+|[Feature selection and importance](projects/featimp/featimp.md)| 20% | Wed, Mar 9 11:59pm |
+|Exam 1| 25%| 3:15PM-4:15PM Thur Feb 17 |
+|Exam 2| 30%| 10AM-11:00AM Fri Mar 11 |
 
-<!--
-| Artifact | Grade Weight | Due date |
-|--------|--------|--------|
-|[OO hashtable](projects/oohtable/oohtable.md)| 8% | Fri, Jan 31 11:59pm |
-|[Clustering](projects/kmeans/kmeans.md)| 17% | Sun, Feb 16 11:59pm |
-|[Feature selection and importance](projects/featimp/featimp.md)| 20% | Wed, Mar 4 11:59pm |
-|Exam 1| 25%| 3:15PM-4:15PM Thur Feb 13 |
-|Exam 2| 30%| 10AM-11:00AM Fri Mar 6 |
--->
-
-At the end of the last module, we studied feature importance and briefly touched on clustering.  There was not time to study these topics in more detail through projects, but they are important and students report getting related interview questions extremely frequently. Consequently, while seemingly a bit out of place, the faculty has decided to include free-form reports on these machine-learning related topics in this data structures and algorithms class. Here are two quick comments I received from the last cohort concerning these projects:
-
-<table><tr><td>
-<img src="student-featimp.png" width="600">
-</td></tr></table>
-
-<table><tr><td>
-<img src="student-kmeans.png" width="550">
-</td></tr></table>
 
 The oohtable project will be graded with the specific input or tests given in the project description, so you understand precisely what is expected of your program. Consequently, projects will be graded in binary fashion: They either work or they do not. The only exception is when your program does not run on the grader's or my machine because of some cross-platform issue. This is typically because a student has hardcoded some file name or directory into their program. In that case, we will take off *a minimum* of 10% instead of giving you a 0, depending on the severity of the mistake. Please go to github and verify that the website has the proper files for your solution. That is what I will download for testing.
 
