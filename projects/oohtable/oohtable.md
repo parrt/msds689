@@ -2,7 +2,7 @@
 
 In [MSDS962](https://github.com/parrt/msds692/blob/master/hw/search.md) you learned how to create and use a hash table. You did so by using non-object-oriented programming; i.e., just a bunch of functions. In this homework, your will build an object-oriented version of the hash table project. You will see that the object-oriented version is much more user-friendly and that it behaves very much like the built-in `dict` class.
 
-Rather than updating your own original code base, you will download and update a previous student's code. I have provided everyone with a common `htable.py` to start with (rename it to `oohtable.py`); please see the files area on Canvas. This will give you an opportunity to read somebody else's code from a few years ago. It's more or less okay but not very pretty. You are free to improve the code quality as you add features and convert it to an object-oriented version in this project. Learning to read and modify somebody else's code is a critical skill to gain in order to be productive at work.
+Rather than updating your own original code base, you will download and update a previous student's code. I have provided everyone with a common `baseline_htable.py` to start with (rename it to `oohtable.py`); please see the files area on Canvas. This will give you an opportunity to read somebody else's code from a few years ago. It's more or less okay but not very pretty. *There might be a few bugs in the code.* ;) You are free to improve the code quality as you add features and convert it to an object-oriented version in this project. Learning to read and modify somebody else's code is a critical skill to gain in order to be productive at work.
 
 As you work on this project, I encourage you to reflect on:
 
