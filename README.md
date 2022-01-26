@@ -69,6 +69,7 @@ Lectures are Fridays 10-11:50AM California time
 |Exam 1| 25%| 4:30PM-5:30PM Thur Feb 17 |
 |Exam 2| 30%| 10AM-11:00AM Fri Mar 11 |
 
+Note: In order to pass this course, students are expected to receive at least 50% of each category. E.g., receiving less than 29/60 on your quiz might not be a satisfying grade.
 
 The oohtable project will be graded with the specific input or tests given in the project description, so you understand precisely what is expected of your program. (There are a few hidden tests though.) Consequently, projects will be graded in binary fashion: The tests either work or they do not. The only exception is when your program does not run on the grader's or my machine because of some cross-platform issue. This is typically because a student has hardcoded some file name or directory into their program. In that case, we will take off *a minimum* of 10% instead of giving you a 0, depending on the severity of the mistake. Please go to github and verify that the website has the proper files for your solution. That is what I will download for testing.
 
