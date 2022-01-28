@@ -208,3 +208,9 @@ I will be scanning through your reports, so grading could take take significantl
 You should also think about explaining how all of your algorithms work, including how you identify which cluster centroids should be associated with which true labels. Talk about any extra stuff you've done and other tests. Ask yourself what you don't know and what you'd like to learn at the start of this project. Then those are good questions to ask and answer in your report notebook. Try to create something that you will be proud to show potential employers.
 
 You should submit a well-written and well-organized report, not a junk drawer of crap you were working on when the deadline hit. ;)
+
+### Sample report snippets from previous students
+
+To give you an idea of what decent reports look like, here are some snippets:
+
+<img src="sample-report-snippets/a.png" width="100"> <img src="sample-report-snippets/b.png" width="100"> <img src="sample-report-snippets/c.png" width="100"> <img src="sample-report-snippets/d.png" width="100"> <img src="sample-report-snippets/e.png" width="100">
